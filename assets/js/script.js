@@ -158,10 +158,10 @@
         loop: true,
         speed: 1000,
         parallax: true,
-        autoplay: {
-            delay: 6500,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 6500,
+        //     disableOnInteraction: false,
+        // },
         watchSlidesProgress: true,
         pagination: {
             el: '.swiper-pagination',
@@ -430,7 +430,6 @@
 
         searchToggleBtn.on("click", function (e) {
             searchContent.toggleClass("header-search-content-toggle");
-            searchToggleBtnIcon.toggleClass("fi flaticon-loupe fi ti-close");
             e.stopPropagation();
         });
 

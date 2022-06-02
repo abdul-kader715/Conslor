@@ -3166,18 +3166,18 @@ img {
 
 @-webkit-keyframes spineer {
   from {
-    box-shadow: 0 0 0 0 rgba(59, 81, 125, 0.99);
+    box-shadow: 0 0 0 0 rgba(224, 175, 20, 0.99);
   }
   to {
-    box-shadow: 0 0 0 45px rgba(59, 81, 125, 0.01);
+    box-shadow: 0 0 0 45px rgba(224, 175, 20, 0.01);
   }
 }
 @keyframes spineer {
   from {
-    box-shadow: 0 0 0 0 rgba(59, 81, 125, 0.99);
+    box-shadow: 0 0 0 0 rgba(224, 175, 20, 0.99);
   }
   to {
-    box-shadow: 0 0 0 45px rgba(59, 81, 125, 0.01);
+    box-shadow: 0 0 0 45px rgba(224, 175, 20, 0.01);
   }
 }
 /*--------------------------------------------------------------
