@@ -523,15 +523,44 @@
                     slidesToScroll: 1
                 }
             },
-           
+
         ]
     });
-    if ($(".wpo-service-slider").length) {
-        $(".wpo-service-slider").owlCarousel({
+
+    // team-slider-s2
+
+    $('.team-slider-s2').slick({
+        dots: true,
+        arrows: false,
+        speed: 300,
+        focusOnSelect: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+
+        ]
+    });
+    // testimonial-slider
+    if ($(".testimonial-slider").length) {
+        $(".testimonial-slider").owlCarousel({
             autoplay: false,
             smartSpeed: 300,
             loop: true,
-            autoplayHoverPause: true,
+            // autoplayHoverPause: true,
             dots: true,
             nav: false,
             responsive: {
@@ -548,15 +577,51 @@
                 },
 
                 768: {
-                    items: 2,
+                    items: 1,
                 },
 
                 1200: {
-                    items: 3
+                    items: 1
                 },
 
                 1400: {
-                    items: 3
+                    items: 1
+                },
+
+            }
+        });
+    }
+    if ($(".wpo-service-slider").length) {
+        $(".wpo-service-slider").owlCarousel({
+            autoplay: false,
+            smartSpeed: 300,
+            loop: true,
+            // autoplayHoverPause: true,
+            dots: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    dots: true,
+                    nav: false
+                },
+
+                500: {
+                    items: 1,
+                    dots: true,
+                    nav: false
+                },
+
+                768: {
+                    items: 1,
+                },
+
+                1200: {
+                    items: 1
+                },
+
+                1400: {
+                    items: 1
                 },
 
             }

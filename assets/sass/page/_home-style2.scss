@@ -28,14 +28,16 @@
 
 // wpo-about-section-s2
 .wpo-about-section-s2 {
+    padding-top: 0;
 
     .wpo-about-text {
 
         ul {
             li {
-                
+
                 padding-left: 0;
-                &::before{
+
+                &::before {
                     display: none;
                 }
 
@@ -71,8 +73,357 @@
             transform: translate(-50%, -50%);
         }
 
+        img {}
+    }
+}
+
+// wpo-fun-fact-section-s2
+.wpo-fun-fact-section-s2 {
+
+    .wpo-fun-fact-grids {
+
+        .grid {
+            width: 25%;
+            margin-top: 0;
+            justify-content: center;
+
+            .info {
+                border-left: 1px solid $border-color-s2;
+                padding-left: 7px;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+// wpo-service-section-s2
+.wpo-service-section-s2 {
+
+    .service-wrap {
+
+        .service-single {
+            text-align: center;
+
+            h3 {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+
+                &::before {
+                    left: 50%;
+                }
+
+                a {
+                    padding: 0 25px;
+                }
+            }
+        }
+    }
+}
+
+// wpo-team-section-s2
+.wpo-team-section-s2 {
+
+    .team-slider-s2 {
+        .team-single {
+            .team-img {
+                img {
+                    border-radius: 8px;
+                }
+
+                .team-content {
+                    text-align: center;
+                    border-radius: 10px;
+                    background: #fffffff2;
+
+                    left: 50%;
+
+                    h3 {
+                        a {
+                            color: $small-black;
+                        }
+                    }
+
+                    span {
+                        color: $theme-primary-color;
+                    }
+                }
+            }
+
+            &:hover {
+                .team-content {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+
+        .slick-slide.slick-current {
+            .team-single {
+                .team-img {
+                    .team-content {
+                        bottom: 15%;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+        .slick-slider {
+            margin: 0 -15px;
+        }
+
+        .slick-slide {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+            list-style-type: none;
+
+            li {
+                margin: 0 0.25rem;
+            }
+
+            button {
+                display: block;
+                width: 12px;
+                height: 12px;
+                padding: 0;
+                border: none;
+                border-radius: 100%;
+                background: $text-color-s5;
+                text-indent: -9999px;
+            }
+
+            li.slick-active button {
+                background-color: $theme-primary-color;
+            }
+
+        }
+
+    }
+}
+
+// wpo-bussiness-area-section
+.wpo-bussiness-area-section {
+    background: $black;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .bussiness-text {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        h2 {
+            color: $white;
+            font-size: 48px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin: 0;
+
+            .first-text {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background: $theme-primary-color;
+                padding: 10px 35px;
+                margin-bottom: 10px;
+                clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 6% 50%);
+                transform: rotate(353deg);
+            }
+
+            .second-text {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background: $theme-primary-color;
+                padding: 10px 35px;
+                margin-bottom: 10px;
+                transform: rotate(353deg);
+                clip-path: polygon(3% 0, 100% 0, 97% 100%, 0% 100%);
+            }
+
+            .third-text {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background: $theme-primary-color;
+                padding: 10px 35px;
+                margin-bottom: 10px;
+                clip-path: polygon(14% 0, 100% 0, 95% 50%, 100% 100%, 14% 100%, 0 50%);
+                transform: rotate(353deg);
+            }
+        }
+    }
+
+    .right-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+
         img {
-           
+            max-width: 100%;
+        }
+    }
+}
+
+// .wpo-testimonial-section
+.wpo-testimonial-section {
+    padding-top: 60px;
+
+    .text-musk-s2 {
+        margin-bottom: 70px;
+
+
+        .text-musk-title {
+            background: url(../images/text-moqup.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 207px;
+            font-weight: 400;
+            color: $text-color-s2;
+
+            @media (max-width:1399px) {
+                font-size: 195px;
+            }
+
+            @media (max-width:1199px) {
+                font-size: 165px;
+            }
+
+            @media (max-width:991px) {
+                font-size: 120px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .testimonial-wrap {
+
+        border-bottom: 1px solid #e0e2e8;
+
+        .testimonial-icon {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            border-right: 1px solid #e0e2e8;
+
+            i {
+                &::before {
+                    color: $text-color-s5;
+                    font-size: 180px;
+
+                }
+            }
+        }
+
+        .testimonial-content {
+
+            h5 {
+                color: $text-color-s2;
+                font-size: 24px;
+                font-style: italic;
+                margin-bottom: 23px;
+                line-height: 30px;
+            }
+
+            h3 {
+                a {
+                    color: $theme-primary-color;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+
+            span {
+                color: $text-color-s3;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+
+        .owl-nav.disabled {
+            display: none;
+        }
+
+        .owl-nav button {
+            position: absolute;
+            top: 50%;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .owl-nav button.owl-prev {
+            left: 0;
+        }
+
+        .owl-nav button.owl-next {
+            right: 0;
+        }
+
+        .owl-dots {
+            padding-top: 15px;
+        }
+
+        .owl-dots button.owl-dot {
+            width: 10px;
+            height: 10px;
+            border: 0;
+            border-radius: 50%;
+            display: inline-block;
+            background: #c8c8c8;
+            margin: 0 3px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .owl-dots button.owl-dot.active {
+            width: 55px;
+            border-radius: 8px;
+            background: $theme-primary-color;
+            margin: 0 20px;
+        }
+
+        .owl-dots button.owl-dot:focus {
+            outline: none;
+        }
+
+        .owl-nav button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.38) !important;
+        }
+
+        span {
+            font-size: 70px;
+            position: relative;
+            top: -5px;
+        }
+
+        .owl-nav button:focus {
+            outline: none;
         }
     }
 }
