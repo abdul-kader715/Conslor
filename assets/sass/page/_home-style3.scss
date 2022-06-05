@@ -1,0 +1,154 @@
+// wpo-service-section-s3
+.wpo-service-section-s3 {
+    .service-wrap {
+
+        .service-single {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+
+            .service-icon {
+                i {
+                    &::before {
+                        color: #8d95a0;
+                        font-size: 60px;
+                    }
+                }
+            }
+
+            .content {
+                text-align: start;
+                padding-left: 25px;
+
+                h3 {
+                    padding-bottom: 25px;
+                    display: inline-block;
+                    text-align: start;
+
+                    a {
+                        padding: 0;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+
+                    &::before {
+                        position: unset;
+                        display: none;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// wpo-case-studies-section
+.wpo-case-studies-section {
+
+    .title {
+        h5 {
+            font-size: 150px;
+            color: $text-color-s2;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-family: $base-font;
+            text-align: center;
+        }
+    }
+
+    .case-studies-wrap {
+
+        .case-studies-content {
+            padding: 90px;
+            background: $section-bg-color;
+
+            .content-info {
+                background: $white;
+                padding: 30px;
+                width: 230px;
+                margin-bottom: 60px;
+
+                span {
+                    font-size: 14px;
+                    color: $text-color-s2;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    text-align: left;
+                    font-family: $heading-font;
+                    display: block;
+
+                    h5 {
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: $text-color-s2;
+                        display: inline-block;
+                    }
+                }
+            }
+
+        }
+
+        .case-studies-right {
+
+            .case-studies-simgle-item{
+                    position: relative;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                    .text{
+                        position: absolute;
+                        max-width: 350px;
+                        width: 100%;
+                        left: 50%;
+                        top: 100%;
+                        transform: translateX(-50%);
+                        background: $theme-primary-color;
+                        padding: 30px 25px;
+                        color: $white;
+                        transition: all .4s ease-in-out;
+                        h3{
+                            font-weight:700;
+                            font-size: 18px;
+                            color: $white;
+                        }
+                        span{
+                            font-weight:600;
+                            font-size: 14px;
+                            letter-spacing: 3px;
+                        }
+                    }
+                    &:hover{
+                        .text{
+                            top: 60%;
+                        }
+                    }
+                
+            }
+        }
+
+    }
+
+}
+
+
+// wpo-testimonial-section-s2
+.wpo-testimonial-section-s2 {
+    padding-top: 55px;
+
+    .text-musk-s3 {
+        margin-bottom: 67px;
+
+        h5 {
+            font-size: 150px;
+            color: $text-color-s2;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-family: $base-font;
+
+            span {
+                color: $theme-primary-color;
+            }
+        }
+    }
+}
