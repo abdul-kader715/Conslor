@@ -1160,3 +1160,45 @@
 	}
 
 }
+
+// wpo-hero-style-3
+.wpo-hero-style-3 {
+	height: 840px;
+
+	.swiper-slide .slide-image {
+		top: 50%;
+	}
+
+	.slide-content {
+		margin-top: 312px;
+		h2 {
+			text-transform: uppercase;
+			font-size: 209px;
+			line-height: 1.2;
+
+			span {
+				color: $theme-primary-color;
+			}
+		}
+
+		p {
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: 300;
+			letter-spacing: 10px;
+			font-style: normal;
+			text-decoration: underline;
+			font-family: $base-font;
+		}
+
+		.theme-btn {
+			border-radius: 0;
+			text-transform: uppercase;
+		}
+	}
+	.swiper-slide .video-area{
+
+	}
+
+
+}

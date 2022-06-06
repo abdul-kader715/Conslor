@@ -2969,6 +2969,68 @@ img {
   }
 }
 
+.wpo-header-style-3 #navbar ul li a:hover {
+  background: transparent;
+  color: #e0af14;
+}
+
+.wpo-header-style-3 #navbar ul > li .sub-menu a:hover {
+  color: #e0af14;
+}
+
+.wpo-header-style-3 .header-right .cart-toggle-btn {
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .wpo-header-style-3 .header-right .cart-toggle-btn {
+    height: 20px;
+  }
+}
+
+.wpo-header-style-3 .mini-cart .cart-count {
+  background: #233d62;
+  width: 20px;
+  height: 20px;
+  font-size: 9px;
+  top: 5px;
+  right: 16px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wpo-header-style-3 .cart-toggle-btn.card::before {
+  width: 0;
+  height: 0;
+}
+
+.wpo-header-style-3 .cart-toggle-btn.card i::before {
+  font-size: 24px;
+}
+
+.wpo-header-style-3 .header-right .search-toggle-btn {
+  padding-right: 30px;
+  width: 30px;
+  border: 0;
+  padding-bottom: 0;
+}
+
+.wpo-header-style-3 .header-right .search-toggle-btn::before {
+  left: 30px;
+}
+
 /*--------------------------------------------------------------
 3. content
 --------------------------------------------------------------*/
@@ -4357,6 +4419,43 @@ img {
 
 .hero-style-2 .slide-caption p {
   color: #fff;
+}
+
+.wpo-hero-style-3 {
+  height: 840px;
+}
+
+.wpo-hero-style-3 .swiper-slide .slide-image {
+  top: 50%;
+}
+
+.wpo-hero-style-3 .slide-content {
+  margin-top: 312px;
+}
+
+.wpo-hero-style-3 .slide-content h2 {
+  text-transform: uppercase;
+  font-size: 209px;
+  line-height: 1.2;
+}
+
+.wpo-hero-style-3 .slide-content h2 span {
+  color: #e0af14;
+}
+
+.wpo-hero-style-3 .slide-content p {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  font-style: normal;
+  text-decoration: underline;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.wpo-hero-style-3 .slide-content .theme-btn, .wpo-hero-style-3 .slide-content .view-cart-btn {
+  border-radius: 0;
+  text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------
@@ -6451,6 +6550,81 @@ img {
   outline: none;
 }
 
+.wpo-free-consultation-section .free-consultation-wrap {
+  position: relative;
+  background: #233d62;
+  padding-bottom: 100px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.wpo-free-consultation-section .free-consultation-wrap .section-bg-img {
+  position: absolute;
+  left: 34%;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+}
+
+.wpo-free-consultation-section .free-consultation-wrap .section-bg-img img {
+  width: 100%;
+  max-width: 1240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wpo-free-consultation-section .free-consultation-wrap .free-consultation-content h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: underline;
+  margin-bottom: 28px;
+}
+
+.wpo-free-consultation-section .free-consultation-wrap .free-consultation-content .fc-contact .fc-contact-name,
+.wpo-free-consultation-section .free-consultation-wrap .free-consultation-content .fc-contact .form-controls,
+.wpo-free-consultation-section .free-consultation-wrap .free-consultation-content .fc-contact .fc-contact-number {
+  width: 100%;
+  color: #687693;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.wpo-free-consultation-section .free-consultation-wrap .free-consultation-content .fc-contact .fc-contact-name:focus-visible,
+.wpo-free-consultation-section .free-consultation-wrap .free-consultation-content .fc-contact .form-controls:focus-visible,
+.wpo-free-consultation-section .free-consultation-wrap .free-consultation-content .fc-contact .fc-contact-number:focus-visible {
+  outline: 0;
+}
+
+.wpo-free-consultation-section .free-consultation-wrap .free-consultation-content .fc-contact .form-controls {
+  background: #fff url(../images/select-icon2.png) no-repeat calc(100% - 15px) center;
+  border-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.wpo-free-consultation-section .free-consultation-wrap .free-consultation-content .fc-contact .form-controls:focus {
+  border-color: transparent;
+  -webkit-box-shadow: transparent;
+          box-shadow: transparent;
+}
+
+.wpo-free-consultation-section .free-consultation-wrap .free-consultation-content .fc-contact .theme-btn, .wpo-free-consultation-section .free-consultation-wrap .free-consultation-content .fc-contact .view-cart-btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.wpo-service-section-s3 {
+  padding-bottom: 40px;
+}
+
 .wpo-service-section-s3 .service-wrap .service-single {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6488,6 +6662,10 @@ img {
   display: none;
 }
 
+.wpo-case-studies-section .title {
+  margin-bottom: 32px;
+}
+
 .wpo-case-studies-section .title h5 {
   font-size: 150px;
   color: #233d62;
@@ -6506,10 +6684,10 @@ img {
   background: #fff;
   padding: 30px;
   width: 230px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
-.wpo-case-studies-section .case-studies-wrap .case-studies-content .content-info span {
+.wpo-case-studies-section .case-studies-wrap .case-studies-content .content-info h5 {
   font-size: 14px;
   color: #233d62;
   text-transform: uppercase;
@@ -6519,11 +6697,34 @@ img {
   display: block;
 }
 
-.wpo-case-studies-section .case-studies-wrap .case-studies-content .content-info span h5 {
+.wpo-case-studies-section .case-studies-wrap .case-studies-content .content-info h5 span {
   font-weight: 600;
   font-size: 14px;
   color: #233d62;
   display: inline-block;
+}
+
+.wpo-case-studies-section .case-studies-wrap .case-studies-content h5 {
+  color: #233d62;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 21px;
+}
+
+.wpo-case-studies-section .case-studies-wrap .case-studies-content p,
+.wpo-case-studies-section .case-studies-wrap .case-studies-content .bottom-pera {
+  color: #233d62;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wpo-case-studies-section .case-studies-wrap .case-studies-content .bottom-pera {
+  padding-top: 8px;
+}
+
+.wpo-case-studies-section .case-studies-wrap .case-studies-content .theme-btn, .wpo-case-studies-section .case-studies-wrap .case-studies-content .view-cart-btn {
+  margin-top: 50px;
+  border-radius: 0;
 }
 
 .wpo-case-studies-section .case-studies-wrap .case-studies-right .case-studies-simgle-item {
@@ -6566,8 +6767,76 @@ img {
   top: 60%;
 }
 
+.wpo-why-choose-us-section {
+  padding-bottom: 86px;
+}
+
+.wpo-why-choose-us-section .section-bg-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 11;
+}
+
+.wpo-why-choose-us-section .section-bg-img img {
+  width: 100%;
+}
+
+.wpo-why-choose-us-section .section-bg-img .why-choose-us-content {
+  position: absolute;
+  top: 50%;
+  left: 34%;
+  max-width: 500px;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 95px 55px;
+  color: #fff;
+  z-index: 1;
+}
+
+.wpo-why-choose-us-section .section-bg-img .why-choose-us-content::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #e0af14;
+  opacity: .9;
+  z-index: -1;
+}
+
+.wpo-why-choose-us-section .section-bg-img .why-choose-us-content h3 {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 39px;
+  font-weight: 300;
+  margin-bottom: 27px;
+}
+
+.wpo-why-choose-us-section .section-bg-img .why-choose-us-content p {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 44px;
+}
+
+.wpo-why-choose-us-section .section-bg-img .why-choose-us-content .theme-btn, .wpo-why-choose-us-section .section-bg-img .why-choose-us-content .view-cart-btn {
+  background: transparent;
+  border-radius: 0;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+}
+
 .wpo-testimonial-section-s2 {
-  padding-top: 55px;
+  padding-top: 0;
 }
 
 .wpo-testimonial-section-s2 .text-musk-s3 {

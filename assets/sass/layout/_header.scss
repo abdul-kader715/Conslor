@@ -1569,19 +1569,20 @@
 			background: #29395b;
 		}
 
-		
+
 		.header-right {
 			.close-form {
 				.call-us {
 					color: $white;
+
 					span {
 						color: $white;
 					}
-	
+
 					h2 {
-	
+
 						color: $white;
-	
+
 						i {
 							&::before {
 								color: $white;
@@ -1671,4 +1672,84 @@
 	.wpo-site-header .navigation.sticky-header {
 		padding: 20px 10px;
 	}
+}
+
+.wpo-header-style-3 {
+
+	#navbar {
+		ul {
+			li {
+				a {
+					&:hover {
+						background: transparent;
+						color: $theme-primary-color;
+					}
+				}
+			}
+		}
+
+		ul>li .sub-menu a:hover {
+			color: $theme-primary-color;
+
+		}
+	}
+
+	.header-right .cart-toggle-btn {
+		width: 30px;
+		height: 20px;
+		background: transparent;
+		border: 0;
+		padding-bottom: 0;
+
+		@media (max-width:1199px) {}
+
+		@media (max-width:991px) {
+			height: 20px;
+		}
+
+	}
+
+
+	.mini-cart .cart-count {
+		background: $text-color-s2;
+		width: 20px;
+		height: 20px;
+		font-size: 9px;
+		top: 5px;
+		right: 16px;
+		font-weight: 700;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cart-toggle-btn.card {
+		&::before {
+			width: 0;
+			height: 0;
+		}
+
+		i {
+			&::before {
+				font-size: 24px;
+			}
+		}
+	}
+
+	.header-right {
+		.search-toggle-btn {
+			padding-right: 30px;
+			width: 30px;
+			border: 0;
+			padding-bottom: 0;
+
+
+
+			&::before {
+				left: 30px;
+			}
+
+		}
+	}
+
 }

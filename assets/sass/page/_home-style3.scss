@@ -1,5 +1,85 @@
+// wpo-free-consultation-section
+.wpo-free-consultation-section {
+    .free-consultation-wrap {
+        position: relative;
+        background: $text-color-s2;
+        padding-bottom: 100px;
+        z-index: 1;
+        overflow: hidden;
+
+        .section-bg-img {
+            position: absolute;
+            left: 34%;
+            width: 100%;
+            bottom: 0;
+            z-index: -1;
+
+            img {
+                width: 100%;
+                max-width: 1240px;
+                object-fit: cover;
+            }
+        }
+
+        .free-consultation-content {
+            h3 {
+                color: $white;
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: 10px;
+                text-transform: uppercase;
+                font-family: $base-font;
+                text-decoration: underline;
+                margin-bottom: 28px;
+            }
+
+            .fc-contact {
+
+                .fc-contact-name,
+                .form-controls,
+                .fc-contact-number {
+                    width: 100%;
+                    color: $text-color-s3;
+                    font-size: 15px;
+                    font-weight: 400;
+                    padding: 20px;
+                    margin-bottom: 20px;
+
+                    &:focus-visible {
+                        outline: 0;
+                    }
+                }
+
+                .form-controls {
+                    background: $white url(../images/select-icon2.png) no-repeat calc(100% - 15px) center;
+                    border-color: transparent;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+
+                    &:focus {
+                        border-color: transparent;
+                        box-shadow: transparent;
+                    }
+                }
+
+                .fc-contact-number {}
+
+                .theme-btn {
+                    border-radius: 0;
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
+
 // wpo-service-section-s3
 .wpo-service-section-s3 {
+    padding-bottom: 40px;
+
     .service-wrap {
 
         .service-single {
@@ -46,6 +126,8 @@
 .wpo-case-studies-section {
 
     .title {
+        margin-bottom: 32px;
+
         h5 {
             font-size: 150px;
             color: $text-color-s2;
@@ -66,9 +148,9 @@
                 background: $white;
                 padding: 30px;
                 width: 230px;
-                margin-bottom: 60px;
+                margin-bottom: 50px;
 
-                span {
+                h5 {
                     font-size: 14px;
                     color: $text-color-s2;
                     text-transform: uppercase;
@@ -77,7 +159,7 @@
                     font-family: $heading-font;
                     display: block;
 
-                    h5 {
+                    span {
                         font-weight: 600;
                         font-size: 14px;
                         color: $text-color-s2;
@@ -86,44 +168,72 @@
                 }
             }
 
+            h5 {
+                color: $text-color-s2;
+                font-size: 36px;
+                font-weight: 400;
+                margin-bottom: 21px;
+            }
+
+            p,
+            .bottom-pera {
+                color: $text-color-s2;
+                font-size: 16px;
+                font-weight: 400;
+
+            }
+
+            .bottom-pera {
+                padding-top: 8px;
+            }
+
+            .theme-btn {
+                margin-top: 50px;
+                border-radius: 0;
+            }
         }
 
         .case-studies-right {
 
-            .case-studies-simgle-item{
-                    position: relative;
-                    overflow: hidden;
-                    img{
-                        width: 100%;
-                    }
-                    .text{
-                        position: absolute;
-                        max-width: 350px;
-                        width: 100%;
-                        left: 50%;
-                        top: 100%;
-                        transform: translateX(-50%);
-                        background: $theme-primary-color;
-                        padding: 30px 25px;
+            .case-studies-simgle-item {
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+
+                .text {
+                    position: absolute;
+                    max-width: 350px;
+                    width: 100%;
+                    left: 50%;
+                    top: 100%;
+                    transform: translateX(-50%);
+                    background: $theme-primary-color;
+                    padding: 30px 25px;
+                    color: $white;
+                    transition: all .4s ease-in-out;
+
+                    h3 {
+                        font-weight: 700;
+                        font-size: 18px;
                         color: $white;
-                        transition: all .4s ease-in-out;
-                        h3{
-                            font-weight:700;
-                            font-size: 18px;
-                            color: $white;
-                        }
-                        span{
-                            font-weight:600;
-                            font-size: 14px;
-                            letter-spacing: 3px;
-                        }
                     }
-                    &:hover{
-                        .text{
-                            top: 60%;
-                        }
+
+                    span {
+                        font-weight: 600;
+                        font-size: 14px;
+                        letter-spacing: 3px;
                     }
-                
+                }
+
+                &:hover {
+                    .text {
+                        top: 60%;
+                    }
+                }
+
             }
         }
 
@@ -131,10 +241,76 @@
 
 }
 
+// wpo-why-choose-us-section
+.wpo-why-choose-us-section {
+    padding-bottom: 86px;
+
+    .section-bg-img {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        z-index: 11;
+
+        img {
+            width: 100%;
+        }
+
+        .why-choose-us-content {
+            position: absolute;
+            top: 50%;
+            left: 34%;
+            max-width: 500px;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            padding: 95px 55px;
+            color: $white;
+            z-index: 1;
+
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background: $theme-primary-color;
+                opacity: .9;
+                z-index: -1;
+            }
+
+            h3 {
+                color: $white;
+                font-family: $base-font;
+                font-size: 39px;
+                font-weight: 300;
+                margin-bottom: 27px;
+            }
+
+            p {
+                color: $white;
+                font-family: $base-font;
+                font-size: 16px;
+                font-weight: 300;
+                margin-bottom: 44px;
+            }
+
+            .theme-btn {
+                background: transparent;
+                border-radius: 0;
+                border: 1px solid $white;
+                text-transform: uppercase;
+            }
+        }
+
+
+
+    }
+}
 
 // wpo-testimonial-section-s2
 .wpo-testimonial-section-s2 {
-    padding-top: 55px;
+    padding-top: 0;
 
     .text-musk-s3 {
         margin-bottom: 67px;
