@@ -1164,16 +1164,19 @@
 // wpo-hero-style-3
 .wpo-hero-style-3 {
 	height: 840px;
+	position: relative;
+	z-index: -1;
 
 	.swiper-slide .slide-image {
 		top: 50%;
 	}
 
 	.slide-content {
-		margin-top: 312px;
+		margin-top: 135px;
+
 		h2 {
 			text-transform: uppercase;
-			font-size: 209px;
+			font-size: 205px;
 			line-height: 1.2;
 
 			span {
@@ -1196,9 +1199,65 @@
 			text-transform: uppercase;
 		}
 	}
-	.swiper-slide .video-area{
+
+	.swiper-slide .video-area {
+		top: 24%;
+		left: 20%;
+	}
+
+	.swiper-button-prev {
+		top: 90%;
+	}
+
+	.swiper-button-next {
+		left: 80px;
+		top: 90%;
+	}
+
+	.swiper-button-prev:before {
+		content: "\f11e";
+	}
+
+	.swiper-button-next:before {
+		content: "\f11d";
+	}
+
+	.shape-1,
+	.shape-2,
+	.shape-3,
+	.shape-4,
+	.shape-5,
+	.shape-6{
+		position: absolute;
+		z-index: -1;
+		width: 1px;
+		height: 100%;
+		left: 303px;
+		top: 0;
+		background: #515156;
+		z-index: 1;
 
 	}
 
+	.shape-2 {
+		left: 50%;
+	}
 
+	.shape-3 {
+		left: 90%;
+	}
+	.shape-4,
+	.shape-5,
+	.shape-6 {
+		left: 0;
+		top: 10%;
+		width: 100%;
+		height: 1px;
+	}
+	.shape-5 {
+		top: 50%;
+	}
+	.shape-6 {
+		top: 85%;
+	}
 }

@@ -1674,7 +1674,8 @@
 	}
 }
 
-.wpo-header-style-3 {
+.wpo-header-style-3,
+.wpo-header-style-4 {
 
 	#navbar {
 		ul {
@@ -1752,4 +1753,25 @@
 		}
 	}
 
+}
+
+.wpo-header-style-4{
+	.shepe-7{
+		border-bottom: 1px solid #e9ebef;
+		width: 100%;
+		@media (max-width:575px) {
+			border: 0;
+		}
+	}
+	 #navbar {
+		justify-content: center;
+	}
+	.header-right .close-form {
+		@media (max-width:1265px) {
+				display: block;
+		}
+		@media (max-width:575px) {
+				display: none;
+		}
+	}
 }

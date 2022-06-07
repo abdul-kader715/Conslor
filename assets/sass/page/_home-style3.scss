@@ -1,5 +1,13 @@
+// wpo-features-section-s3
+.wpo-features-section-s3 {
+    padding-top: 91px;
+    padding-bottom: 57px;
+}
+
 // wpo-free-consultation-section
-.wpo-free-consultation-section {
+.wpo-free-consultation-section,
+.wpo-free-consultation-section-s2 {
+
     .free-consultation-wrap {
         position: relative;
         background: $text-color-s2;
@@ -325,6 +333,14 @@
             span {
                 color: $theme-primary-color;
             }
+        }
+    }
+
+    &.pt-35{
+        padding-top: 35px;
+        @media (max-width:991px) {
+            padding-top: 0;
+            
         }
     }
 }
