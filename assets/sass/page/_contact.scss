@@ -1,0 +1,155 @@
+// wpo-contact-area
+.wpo-contact-area {
+    padding-bottom: 35px;
+
+    .contact-title {
+        span {
+            text-transform: uppercase;
+            color: $text-color-s3;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 5px;
+        }
+
+        h3 {
+            color: $text-color-s2;
+            font-size: 48px;
+            font-weight: 600;
+            font-family: $base-font;
+            margin-bottom: 16px;
+            margin-top: 5px;
+        }
+
+        p {
+            color: $text-color-s3;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    .contact-info {
+
+        .content {
+            h3 {
+                text-transform: uppercase;
+                color: $theme-primary-color;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            p,
+            h5 {
+                color: $text-color-s2;
+                font-size: 18px;
+                font-weight: 600;
+                font-family: $heading-font;
+            }
+
+            .phone {
+
+
+                a {
+                    color: $text-color-s2;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: $heading-font;
+                    display: flex;
+                }
+            }
+
+            border-right: 1px solid #ebebeb;
+            margin-bottom: 20px;
+        }
+
+        .col {
+            &:last-child {
+                .content {
+                    border-right: 0;
+                }
+            }
+        }
+    }
+
+    .contact-form-area {
+        margin-top: 55px;
+
+        .form-title {
+            margin-bottom: 45px;
+
+            h2 {
+                color: $text-color-s2;
+                font-size: 30px;
+                font-weight: 600;
+                font-family: $base-font;
+                margin-bottom: 0;
+
+                i {
+                    color: $theme-primary-color;
+
+                    &::before {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .fc-contact,
+        .form-Select,
+        .fc-contact-text {
+            width: 100%;
+            height: 65px;
+            border: 0;
+            border-bottom: 1px solid #b6bbc5;
+            transition: all .4s ease-in-out;
+            color: #7a7c7f;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 0 24px;
+            margin-bottom: 85px;
+
+            &:focus-visible {
+                outline: 0;
+                border-bottom: 1px solid $theme-primary-color
+            }
+        }
+
+        .form-Select {
+            background: $white url(../images/select-icon2.png) no-repeat calc(100% - 50px) center;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .fc-contact-text {
+            height: 50px;
+        }
+
+        .theme-btn {
+            border-radius: 0;
+            text-transform: uppercase;
+            width: 100%;
+            letter-spacing: 5px;
+            padding: 13px 0;
+        }
+
+    }
+
+}
+
+// wpo-contact-map-section
+.wpo-contact-map-section {
+    padding-bottom: 120px;
+
+    .wpo-contact-map {
+        height: 550px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        outline: 0;
+    }
+
+
+}

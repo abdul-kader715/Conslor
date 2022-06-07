@@ -1,7 +1,8 @@
 /*--------------------------------------------------------------
 4. wpo-footer
 --------------------------------------------------------------*/
-.wpo-site-footer {
+.wpo-site-footer,
+.wpo-site-footer-s2 {
     background: url(../images/footer-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -108,6 +109,7 @@
             width: 1px;
             height: 200px;
             background: #405f71;
+
             @media (max-width:767px) {
                 position: unset;
             }
@@ -135,6 +137,7 @@
 
     .wpo-contact-widget {
         padding-left: 35px;
+
         @media (max-width:991px) {
             padding: 0;
         }
@@ -292,12 +295,13 @@
         .social-widget {
             display: flex;
             justify-content: left;
+
             @media (max-width: 991px) {
-               justify-content: center;
-               margin-top: 0;
-               margin-bottom: 20px;
+                justify-content: center;
+                margin-top: 0;
+                margin-bottom: 20px;
             }
-           
+
             ul {
                 li {
                     display: inline-block;
@@ -391,5 +395,15 @@
                 }
             }
         }
+    }
+}
+
+// wpo-site-footer-s2
+.wpo-site-footer-s2 {
+    background: url(../images/footer-bg-2.jpg);
+
+    &::before {
+        background: #293841;
+        opacity: .95;
     }
 }
