@@ -12,18 +12,18 @@
                 }
             }
 
-            
+
 
             .owl-prev {
                 position: absolute;
                 right: -2%;
-                top: 50%;
+                top: 44%;
             }
 
             .owl-next {
                 position: absolute;
                 right: -2%;
-                top: 57%;
+                top: 53%;
             }
 
             .owl-prev,
@@ -50,6 +50,95 @@
                 }
             }
         }
-        
     }
+
+    .case-single-info {
+        margin-left: 121px;
+
+        tr {
+            margin-bottom: 9px;
+
+            .title,
+            .text {
+                border: 0;
+                text-transform: uppercase;
+                text-decoration: underline;
+                color: $text-color-s2;
+                font-weight: 700;
+                font-size: 13px;
+                letter-spacing: 3px;
+            }
+
+            .text {
+                color: $text-color-s3;
+                font-weight: 600;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .case-single-text {
+        margin-top: 52px;
+        margin-bottom: 74px;
+
+        h2 {
+            color: $text-color-s2;
+            font-weight: 400;
+            font-size: 36px;
+            font-family: $base-font;
+            margin-bottom: 13px;
+        }
+
+        p {
+            color: $text-color-s3;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
+    .case-single-project {
+        border-top: 1px solid #e9e9eb;
+        border-bottom: 1px solid #e9e9eb;
+        padding: 25px 0;
+
+        .prev-project,
+        .next-project {
+            color: $small-black;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: underline;
+            letter-spacing: 3px;
+            width: 100%;
+        }
+
+        .prev-project {
+           
+        }
+
+        .next-project {
+            display: flex;
+            justify-content: end;
+        }
+
+        .project-icon{
+            text-align: center;
+            i{
+                color: $small-black;
+                font-size: 20px;
+            }
+        }
+    }
+    .case-studies-related{
+        padding: 120px 0;
+        h2{
+            color: $text-color-s2;
+            font-size: 36px;
+            font-weight: 400;
+            font-family:$base-font;
+            margin-bottom: 50px;
+        }
+    }
+  
+
 }

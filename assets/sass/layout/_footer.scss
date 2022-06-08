@@ -2,7 +2,8 @@
 4. wpo-footer
 --------------------------------------------------------------*/
 .wpo-site-footer,
-.wpo-site-footer-s2 {
+.wpo-site-footer-s2,
+.wpo-site-footer-s3 {
     background: url(../images/footer-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -399,11 +400,70 @@
 }
 
 // wpo-site-footer-s2
-.wpo-site-footer-s2 {
+.wpo-site-footer-s2,
+.wpo-site-footer-s3 {
     background: url(../images/footer-bg-2.jpg);
 
     &::before {
         background: #293841;
         opacity: .95;
+    }
+}
+
+// wpo-site-footer-s3
+.wpo-site-footer-s3 {
+
+    .footer-subscribe-area {
+        margin-top: 85px;
+
+        .subscribe-btn {
+            .pl-subscribe {
+                width: 390px;
+                height: 55px;
+                padding: 20px;
+                font-size: 16px;
+                color: #7a7c7f;
+                font-weight: 400;
+                border: 1px solid #4e5e74;
+                background: transparent;
+                transition: all .4s ease-in-out;
+
+                &:focus-visible {
+                    outline: 0;
+                    border: 1px solid $theme-primary-color;
+                    color: $white;
+                }
+
+            }
+
+            .theme-btn {
+                position: absolute;
+                border-radius: 0;
+                text-transform: uppercase;
+                width: 180px;
+                font-size: 13px;
+                font-weight: 700;
+                height: 55px;
+                margin-left: 5px;
+
+            }
+
+        }
+
+    }
+    .social-widget {
+        margin-top:0;
+    }
+    .widget-title{
+        h3{
+            text-transform: uppercase;
+            font-family: $base-font;
+            text-decoration: underline;
+            letter-spacing: 3px;
+            font-size: 16px;
+        }
+    } 
+    .wpo-lower-footer .copyright{
+        text-transform: uppercase;
     }
 }
