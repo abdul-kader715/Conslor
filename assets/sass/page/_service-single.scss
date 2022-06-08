@@ -1,0 +1,185 @@
+// wpo-service-singel-area
+.wpo-service-singel-area {
+    padding-top: 0;
+
+    .service-singel-item {
+        ul {
+            li {
+                margin-bottom: 35px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    color: $text-color-s2;
+                    font-weight: 700;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    text-decoration: underline;
+                    transition: all .4s ease-in-out;
+                }
+
+                &:hover {
+                    a {
+                        color: $theme-primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .service-slider {
+        .singel-img {
+            img {
+                width: 100%;
+            }
+        }
+
+        .owl-nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .owl-prev,
+        .owl-next {
+            border: 0;
+            background: transparent;
+            transition: all .4s ease-in-out;
+
+            i {
+                color: #b1b1b1;
+                transition: all .4s ease-in-out;
+
+                &::before {
+                    font-size: 25px;
+                }
+
+
+            }
+
+            &:hover {
+                i {
+                    color: $theme-primary-color;
+                }
+            }
+        }
+
+    }
+
+    .service-singel-content {
+
+        .content-title {
+            h5 {
+                color: $text-color-s2;
+                font-size: 48px;
+                font-weight: 400;
+                width: 620px;
+                font-family: $base-font;
+                margin-top: 10px;
+                margin-bottom: 13px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: $text-color-s3;
+            }
+        }
+
+        .content-text {
+            padding-left: 100px;
+            position: relative;
+            margin-top: 35px;
+            margin-bottom: 70px;
+
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 8px;
+                width: 70px;
+                height: 1px;
+                content: "";
+                background: #919eb0;
+            }
+
+            h4 {
+                color: $text-color-s2;
+                font-size: 20px;
+                font-weight: 400;
+                font-style: italic;
+                margin-bottom: 14px;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 600;
+                color: $text-color-s3;
+            }
+        }
+    }
+
+    .benefit-service {
+        .text {
+            margin-bottom: 22px;
+            h3 {
+                color: $text-color-s2;
+                font-size: 30px;
+                font-weight: 400;
+                margin-bottom: 14px;
+                font-family: $base-font;
+            }
+
+            p {
+                color: $text-color-s3;
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 14px;
+            }
+        }
+
+        .benefit-item {
+            display: flex;
+            margin-bottom: 30px;
+
+            i {
+                color: #5b718f;
+                &::before{
+                    font-size: 45px;
+                }
+            }
+
+            .content {
+                margin-left: 20px;
+
+                h2 {
+                    color: $text-color-s2;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 14px;
+                    font-family: $base-font;
+                }
+
+                span {
+                    color: $text-color-s3;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 14px;
+                }
+            }
+        }
+        .theme-btn{
+            margin-top: 40px;
+            border-radius: 0;
+            background: $theme-primary-color-s2;
+            text-transform: uppercase;
+            font-family: $base-font;
+            letter-spacing: 3px;
+
+            &:hover{
+                background: $theme-primary-color;
+            }
+        }
+    }
+}

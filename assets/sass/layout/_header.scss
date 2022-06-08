@@ -1675,7 +1675,8 @@
 }
 
 .wpo-header-style-3,
-.wpo-header-style-4 {
+.wpo-header-style-4,
+.wpo-header-style-5 {
 
 	#navbar {
 		ul {
@@ -1755,23 +1756,28 @@
 
 }
 
-.wpo-header-style-4{
-	.shepe-7{
+.wpo-header-style-4,
+.wpo-header-style-5 {
+	.shepe-7 {
 		border-bottom: 1px solid #e9ebef;
 		width: 100%;
+
 		@media (max-width:575px) {
 			border: 0;
 		}
 	}
-	 #navbar {
+
+	#navbar {
 		justify-content: center;
 	}
+
 	.header-right .close-form {
 		@media (max-width:1265px) {
-				display: block;
+			display: block;
 		}
+
 		@media (max-width:575px) {
-				display: none;
+			display: none;
 		}
 	}
 }

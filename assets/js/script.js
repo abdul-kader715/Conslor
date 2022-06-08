@@ -586,6 +586,54 @@
         });
     }
 
+    // service-slider
+    if ($(".service-slider").length) {
+        $(".service-slider").owlCarousel({
+            autoplay:true,
+            smartSpeed: 300,
+            margin: 0,
+            loop:true,
+            autoplayHoverPause:true,
+            dots: false,
+            navText: ['<i class="fi flaticon-left-arrow-2"></i>','<i class="fi flaticon-right-arrow"></i>'],
+            responsive: {
+                0 : {
+                    items: 1
+                },
+
+                550 : {
+                    items: 2
+                },
+
+                992 : {
+                    items: 2
+                },
+
+                1200 : {
+                    items: 2
+                }
+            }
+        });
+    }
+
+    // case-single-slider
+    if ($(".case-single-slider").length) {
+        $(".case-single-slider").owlCarousel({
+            autoplay:true,
+            smartSpeed: 300,
+            margin: 0,
+            loop:true,
+            autoplayHoverPause:true,
+            dots: false,
+            navText: ['<i class="fi flaticon-left-arrow-2"></i>','<i class="fi flaticon-right-arrow"></i>'],
+            responsive: {
+                0 : {
+                    items: 1
+                },
+            }
+        });
+    }
+
 
     // testimonial-slider
     if ($(".testimonial-slider").length) {
