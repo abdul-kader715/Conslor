@@ -451,19 +451,22 @@
         }
 
     }
+
     .social-widget {
-        margin-top:0;
+        margin-top: 0;
     }
-    .widget-title{
-        h3{
+
+    .widget-title {
+        h3 {
             text-transform: uppercase;
             font-family: $base-font;
             text-decoration: underline;
             letter-spacing: 3px;
             font-size: 16px;
         }
-    } 
-    .wpo-lower-footer .copyright{
+    }
+
+    .wpo-lower-footer .copyright {
         text-transform: uppercase;
     }
 }

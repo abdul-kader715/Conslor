@@ -13,6 +13,7 @@
 		overflow: hidden;
 		list-style-type: none;
 		text-align: center;
+		border-bottom:1px solid $text-color-s2 ;
 
 		li {
 			float: left;
@@ -36,8 +37,20 @@
 			font-size: calc-rem-value(16);
 			font-weight: 600;
 			color: $dark-gray;
-			background: #ebf4fc;
 			display: block;
+			position: relative;
+			&::before{
+				position: absolute;
+				bottom: 14px;
+				left: 18px;
+				width: 15px;
+				height: 1px;
+				content: '';
+				background: $theme-primary-color;
+				opacity: 0;
+				visibility: hidden;
+				transition: all .4s ease-in-out;
+			}
 
 			@include media-query(991px) {
 				width: 40px;
@@ -50,9 +63,11 @@
 
 		.active a,
 		li a:hover {
-			background: $theme-primary-color;
-			border-color: $theme-primary-color;
-			color: $white;
+			color: $theme-primary-color;
+			&::before{
+				opacity: 1;
+				visibility: visible;
+			}
 		}
 
 		.fi:before {
