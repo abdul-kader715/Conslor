@@ -403,6 +403,11 @@
 .wpo-site-footer-s2,
 .wpo-site-footer-s3 {
     background: url(../images/footer-bg-2.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
 
     &::before {
         background: #293841;
@@ -427,6 +432,9 @@
                 border: 1px solid #4e5e74;
                 background: transparent;
                 transition: all .4s ease-in-out;
+                @media (max-width: 639px) {
+                    width: 100%;
+                }
 
                 &:focus-visible {
                     outline: 0;
@@ -445,13 +453,21 @@
                 font-weight: 700;
                 height: 55px;
                 margin-left: 5px;
+                @media (max-width: 639px) {
+                    bottom: -59px;
+                    left: 7px;
+                }
 
             }
 
         }
 
     }
-
+    .wpo-upper-footer{
+        @media (max-width:639px) {
+          margin-top: 60px; 
+        }
+    }
     .social-widget {
         margin-top: 0;
     }

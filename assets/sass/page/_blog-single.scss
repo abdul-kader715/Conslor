@@ -3,6 +3,12 @@
 --------------------------------------------------------------*/
 .wpo-blog-single-section {
 	padding-bottom: 120px;
+	@media (max-width:991px) {
+		padding-bottom: 90px;
+	}
+	@media (max-width:767px) {
+		padding-bottom: 80px;
+	}
 
 	.entry-media {
 		position: relative;
@@ -23,6 +29,12 @@
 			height: 45px;
 			text-align: center;
 			padding: 10px;
+			@media (max-width:1199px) {
+				top: 80%;	
+			}
+			@media (max-width:450px) {
+				top: 70%;	
+			}
 
 			i {
 				color: $text-color-s2;
@@ -192,6 +204,11 @@
 
 	.format-gallery {
 		margin-top: 55px;
+		.entry-media{
+			img{
+				margin-bottom: 20px;
+			}
+		}
 	}
 
 

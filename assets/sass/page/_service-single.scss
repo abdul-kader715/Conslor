@@ -3,6 +3,9 @@
     padding-top: 0;
 
     .service-singel-item {
+        @media (max-width:991px) {
+            margin-bottom: 30px;
+        }
         ul {
             li {
                 margin-bottom: 35px;
@@ -93,6 +96,9 @@
             position: relative;
             margin-top: 35px;
             margin-bottom: 70px;
+            @media (max-width:424px) {
+                padding-left: 75px;
+            }
 
             &::before {
                 position: absolute;

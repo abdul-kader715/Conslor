@@ -1,7 +1,16 @@
 // wpo-features-section-s3
 .wpo-features-section-s3 {
-    padding-top: 91px;
-    padding-bottom: 57px;
+    padding-top: 95px;
+    padding-bottom: 65px;
+
+    @media (max-width:991px) {
+        padding-top: 90px;
+        padding-bottom: 7px;
+    }
+
+    @media (max-width:767px) {
+        padding-top: 80px;
+    }
 }
 
 // wpo-free-consultation-section
@@ -19,11 +28,13 @@
             position: absolute;
             left: 34%;
             width: 100%;
+            height: 100%;
             bottom: 0;
             z-index: -1;
 
             img {
                 width: 100%;
+                height: 100%;
                 max-width: 1240px;
                 object-fit: cover;
             }
@@ -39,6 +50,10 @@
                 font-family: $base-font;
                 text-decoration: underline;
                 margin-bottom: 28px;
+
+                @media (max-width:767px) {
+                    letter-spacing: 2px;
+                }
             }
 
             .fc-contact {
@@ -88,12 +103,16 @@
 .wpo-service-section-s3 {
     padding-bottom: 40px;
 
+    @media (max-width:767px) {
+        padding-bottom: 30;
+    }
+
     .service-wrap {
 
         .service-single {
             display: flex;
             justify-content: center;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
 
             .service-icon {
                 i {
@@ -144,6 +163,22 @@
             font-weight: 300;
             font-family: $base-font;
             text-align: center;
+
+            @media (max-width:1199px) {
+                font-size: 130px;
+            }
+
+            @media (max-width:991px) {
+                font-size: 100px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 75px;
+            }
+
+            @media (max-width:540px) {
+                font-size: 40px;
+            }
         }
     }
 
@@ -153,12 +188,25 @@
             padding: 90px;
             background: $section-bg-color;
 
+            @media (max-width:1440px) {
+                padding: 20px;
+            }
+
+            @media (max-width:991px) {
+                padding: 50px;
+            }
+
+            @media (max-width:374px) {
+                padding: 20px;
+            }
+
             .content-info {
                 background: $white;
                 padding: 30px;
                 width: 230px;
                 margin-bottom: 50px;
 
+                h4,
                 h5 {
                     font-size: 14px;
                     color: $text-color-s2;
@@ -177,11 +225,9 @@
                 }
             }
 
-            h5 {
-                color: $text-color-s2;
-                font-size: 36px;
-                font-weight: 400;
-                margin-bottom: 21px;
+            h4 {
+
+                margin-bottom: 0;
             }
 
             p,
@@ -199,10 +245,17 @@
             .theme-btn {
                 margin-top: 50px;
                 border-radius: 0;
+
+                @media (max-width:767px) {
+                    margin-top: 30px;
+                }
             }
         }
 
         .case-studies-right {
+            @media (max-width:991px) {
+                margin-top: 30px;
+            }
 
             .case-studies-simgle-item {
                 position: relative;
@@ -276,6 +329,15 @@
             color: $white;
             z-index: 1;
 
+            @media (max-width:991px) {
+                left: 50%;
+            }
+
+            @media (max-width:540px) {
+                padding: 20px 10px;
+                left: 52%;
+            }
+
             &::before {
                 position: absolute;
                 left: 0;
@@ -294,6 +356,10 @@
                 font-size: 39px;
                 font-weight: 300;
                 margin-bottom: 27px;
+
+                @media (max-width:540px) {
+                    font-size: 20px;
+                }
             }
 
             p {
@@ -302,6 +368,11 @@
                 font-size: 16px;
                 font-weight: 300;
                 margin-bottom: 44px;
+
+                @media (max-width:540px) {
+                    font-size: 15px;
+                    margin-bottom: 25px;
+                }
             }
 
             .theme-btn {
@@ -318,11 +389,16 @@
 }
 
 // wpo-testimonial-section-s2
-.wpo-testimonial-section-s2 {
+.wpo-testimonial-section-s2,
+.wpo-testimonial-section-s3 {
     padding-top: 0;
 
     .text-musk-s3 {
         margin-bottom: 67px;
+
+        @media (max-width:767px) {
+            margin-bottom: 0;
+        }
 
         h5 {
             font-size: 150px;
@@ -331,17 +407,58 @@
             font-weight: 300;
             font-family: $base-font;
 
+            @media (max-width:1399px) {
+                font-size: 130px;
+            }
+
+            @media (max-width:1199px) {
+                font-size: 110px;
+            }
+
+            @media (max-width:991px) {
+                font-size: 82px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 67px;
+            }
+
+            @media (max-width:424px) {
+                font-size: 33px;
+            }
+
             span {
                 color: $theme-primary-color;
+
+                @media (max-width:1399px) {
+                    font-size: 130px;
+                }
+
+                @media (max-width:1199px) {
+                    font-size: 110px;
+                }
+
+                @media (max-width:991px) {
+                    font-size: 82px;
+                }
+
+                @media (max-width:767px) {
+                    font-size: 67px;
+                }
+
+                @media (max-width:424px) {
+                    font-size: 33px;
+                }
             }
         }
     }
 
-    &.pt-35{
+    &.pt-35 {
         padding-top: 35px;
+
         @media (max-width:991px) {
             padding-top: 0;
-            
+
         }
     }
 }

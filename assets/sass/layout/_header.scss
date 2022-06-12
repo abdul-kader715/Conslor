@@ -63,6 +63,9 @@
 }
 
 .topbar .contact-info {
+	@media (max-width:767px) {
+		margin-top: 10px;
+	}
 	li {
 		position: relative;
 
@@ -95,6 +98,9 @@
 		}
 
 		.search-toggle-btn {
+			@media (max-width:540px) {
+				margin: 0 0 10px 0;
+			}
 			span {
 				margin-left: 20px;
 				border: 1px solid #cbd0da;

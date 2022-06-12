@@ -24,6 +24,7 @@
 // wpo-history-section
 .wpo-history-section {
     margin-bottom: 56px;
+
     .history-title {
         span {
             color: $text-color-s3;
@@ -39,6 +40,22 @@
             font-weight: 300;
             font-family: $base-font;
             margin-top: 8px;
+
+            @media (max-width:1399px) {
+                font-size: 40px;
+            }
+
+            @media (max-width:1199px) {
+                font-size: 35px;
+            }
+
+            @media (max-width:991px) {
+                font-size: 28px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 25px;
+            }
         }
     }
 
@@ -53,6 +70,12 @@
         padding-bottom: 142px;
         position: relative;
 
+        @media (max-width:767px) {
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
         &::before {
             position: absolute;
             width: 1px;
@@ -61,6 +84,18 @@
             content: "";
             left: 18%;
             background: #78524c;
+
+            @media (max-width:991px) {
+                left: 26.8%;
+            }
+
+            @media (max-width:767px) {
+                left: 33%;
+            }
+
+            @media (max-width:575px) {
+                display: none;
+            }
         }
 
         .nav-link {
@@ -80,12 +115,14 @@
                 transition: all .4s ease-in-out;
             }
 
-            span{
+            span {
                 font-size: 12px;
                 font-weight: 400;
                 text-transform: uppercase;
+                display: block;
             }
-            p{
+
+            small {
                 font-size: 16px;
                 font-weight: 600;
                 margin: 0;
@@ -96,18 +133,26 @@
 
     .nav-link.active {
         background: transparent;
+
         &::before {
             background: $theme-primary-color;
         }
     }
-    .tab-content{
-        .text{
+
+    .tab-content {
+        .text {
             margin-left: 40px;
-            span{
+
+            @media (max-width:575px) {
+                margin: 0;
+            }
+
+            span {
                 font-size: 30px;
                 font-weight: 400;
             }
-            p{
+
+            p {
                 margin-top: 20px;
                 font-size: 16px;
                 font-weight: 400;
@@ -131,6 +176,14 @@
     padding-bottom: 120px;
     position: relative;
 
+    @media (max-width:991px) {
+        padding-bottom: 60px;
+    }
+
+    @media (max-width:767px) {
+        padding-bottom: 50px;
+    }
+
     .partners-img {
         position: absolute;
         left: 0;
@@ -149,7 +202,7 @@
 
     }
 
-    
+
 
 
     .grid img {
