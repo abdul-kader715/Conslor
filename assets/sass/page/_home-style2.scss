@@ -273,10 +273,12 @@
 
 // wpo-bussiness-area-section
 .wpo-bussiness-area-section {
-    background: $black;
+    background: url(../images/cta-img-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
     z-index: 1;
-    overflow: hidden;
 
     .bussiness-text {
         display: flex;

@@ -284,7 +284,7 @@
 
 @media (min-width: 991px) {
 	.wpo-site-header {
-		padding: 0 130px;
+		padding: 15px 130px;
 
 	}
 }
@@ -512,7 +512,7 @@
 .wpo-site-header .header-right>div {
 	float: left;
 	position: relative;
-	margin-right: 8px;
+	margin-right: 15px;
 }
 
 .wpo-site-header .header-right {
@@ -538,7 +538,7 @@
 			.call-us {
 				display: flex;
 				flex-direction: column;
-				margin-left: 5px;
+				margin-left: 15px;
 
 				span {
 					font-size: 16px;
@@ -547,9 +547,9 @@
 				}
 
 				h2 {
-					font-size: 20px;
-					font-weight: 400;
-					color: $text-color-s3;
+					font-size: 24px;
+					font-weight: 900;
+					color: $text-color-s2;
 
 					@media (max-width:1399px) {
 						font-size: 15px;
@@ -558,8 +558,8 @@
 					i {
 						&::before {
 							font-size: 16px;
-							font-weight: 400;
-							color: $text-color-s3;
+							font-weight: 900;
+							color: $text-color-s2;
 
 							@media (max-width:1399px) {
 								font-size: 12px;
@@ -620,10 +620,10 @@
 .wpo-site-header .header-right .search-toggle-btn,
 .wpo-site-header .header-right .cart-toggle-btn {
 	line-height: 0.66em;
-	color: #233d62;
+	color: $text-color-s2;
 	width: 130px;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 700;
 	border-bottom: 1px solid #d1d1d1;
 	text-align: left;
 	padding-bottom: 13px;
@@ -1104,13 +1104,13 @@
 			}
 
 			>ul>li>a {
-				font-size: 16px;
+				font-size: 15px;
 				padding: 15px 20px;
 				margin: 20px 0;
 				display: block;
-				color: #1c1c1c;
+				color: $text-color-s6;
 				text-transform: uppercase;
-				font-weight: 700;
+				font-weight: 900;
 				position: relative;
 
 				&::before {
@@ -1144,7 +1144,7 @@
 			}
 
 			>ul>li .sub-menu a {
-				font-size: 16px;
+				font-size: 15px;
 				font-size: calc-rem-value(16);
 				display: block;
 				padding: 10px 15px;
@@ -1152,7 +1152,7 @@
 				text-transform: capitalize;
 				position: relative;
 				overflow: hidden;
-				font-weight: 700;
+				font-weight: 900;
 				@include transition-time(0.3s);
 
 				&:hover {
@@ -1584,7 +1584,8 @@
 		.header-right {
 			.close-form {
 				.call-us {
-					color: $white;
+					color: $text-color-s2;
+
 
 					span {
 						color: $white;

@@ -72,7 +72,7 @@
 
 
 	.slick-dots {
-		bottom: 445px;
+		bottom: 375px;
 		left: 20px;
 
 		@media (max-width:991px) {
@@ -91,11 +91,12 @@
 		&::before {
 			position: absolute;
 			left: 30px;
-			top: 10px;
 			width: 2px;
-			height: 50px;
 			content: '';
 			background: #7d8178;
+			top: 10px;
+			width: 2px;
+			height: 70px;
 		}
 
 
@@ -117,17 +118,21 @@
 	}
 
 	.slick-dots li {
-		font-size: 14px;
+		font-size: 16px;
+		font-weight: 700;
 		display: block;
+		height: 30px;
 		padding: 5px;
 		cursor: pointer;
 		color: $white;
 	}
 
 	.slick-dots li button {
-		font-size: 14px;
+		font-size: 16px;
+		font-weight: 700;
 		display: block;
 		padding: 5px;
+		cursor: pointer;
 		color: $white;
 	}
 
@@ -135,7 +140,6 @@
 	/*** hero slider animation ***/
 	.slide-caption>div {
 		overflow: hidden;
-
 
 		i {
 			margin-left: 14px;
@@ -290,7 +294,7 @@
 				font-family: $base-font;
 				text-transform: uppercase;
 				letter-spacing: 8px;
-				margin-bottom: 20px;
+				margin-bottom: 0;
 				position: relative;
 				padding-left: 80px;
 

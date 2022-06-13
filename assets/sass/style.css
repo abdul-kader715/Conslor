@@ -1626,7 +1626,7 @@ img {
 
 @media (min-width: 991px) {
   .wpo-site-header {
-    padding: 0 130px;
+    padding: 15px 130px;
   }
 }
 
@@ -1829,7 +1829,7 @@ img {
 .wpo-site-header .header-right > div {
   float: left;
   position: relative;
-  margin-right: 8px;
+  margin-right: 15px;
 }
 
 @media (max-width: 1265px) {
@@ -1866,7 +1866,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 .wpo-site-header .header-right .close-form a .call-us span {
@@ -1876,9 +1876,9 @@ img {
 }
 
 .wpo-site-header .header-right .close-form a .call-us h2 {
-  font-size: 20px;
-  font-weight: 400;
-  color: #687693;
+  font-size: 24px;
+  font-weight: 900;
+  color: #233d62;
 }
 
 @media (max-width: 1399px) {
@@ -1889,8 +1889,8 @@ img {
 
 .wpo-site-header .header-right .close-form a .call-us h2 i::before {
   font-size: 16px;
-  font-weight: 400;
-  color: #687693;
+  font-weight: 900;
+  color: #233d62;
 }
 
 @media (max-width: 1399px) {
@@ -1950,7 +1950,7 @@ img {
   color: #233d62;
   width: 130px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   border-bottom: 1px solid #d1d1d1;
   text-align: left;
   padding-bottom: 13px;
@@ -2449,13 +2449,13 @@ img {
     position: relative;
   }
   .wpo-site-header #navbar > ul > li > a {
-    font-size: 16px;
+    font-size: 15px;
     padding: 15px 20px;
     margin: 20px 0;
     display: block;
-    color: #1c1c1c;
+    color: #393838;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     position: relative;
   }
   .wpo-site-header #navbar > ul > li > a::before {
@@ -2494,7 +2494,7 @@ img {
     transition: all 0.3s;
   }
   .wpo-site-header #navbar > ul > li .sub-menu a {
-    font-size: 16px;
+    font-size: 15px;
     font-size: 1.06667/pxrem;
     display: block;
     padding: 10px 15px;
@@ -2502,7 +2502,7 @@ img {
     text-transform: capitalize;
     position: relative;
     overflow: hidden;
-    font-weight: 700;
+    font-weight: 900;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
@@ -2859,7 +2859,7 @@ img {
 }
 
 .wpo-header-style-2 .navigation .header-right .close-form .call-us {
-  color: #fff;
+  color: #233d62;
 }
 
 .wpo-header-style-2 .navigation .header-right .close-form .call-us span {
@@ -3177,7 +3177,7 @@ img {
 }
 
 .hero .slick-dots {
-  bottom: 445px;
+  bottom: 375px;
   left: 20px;
 }
 
@@ -3203,11 +3203,12 @@ img {
 .hero .slick-dots::before {
   position: absolute;
   left: 30px;
-  top: 10px;
   width: 2px;
-  height: 50px;
   content: '';
   background: #7d8178;
+  top: 10px;
+  width: 2px;
+  height: 70px;
 }
 
 .hero .slick-dots li {
@@ -3224,17 +3225,21 @@ img {
 }
 
 .hero .slick-dots li {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 700;
   display: block;
+  height: 30px;
   padding: 5px;
   cursor: pointer;
   color: #fff;
 }
 
 .hero .slick-dots li button {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 700;
   display: block;
   padding: 5px;
+  cursor: pointer;
   color: #fff;
 }
 
@@ -3413,7 +3418,7 @@ img {
   font-family: "Nunito Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   position: relative;
   padding-left: 80px;
 }
@@ -5421,7 +5426,7 @@ img {
 .wpo-features-section-s3,
 .wpo-features-section-s4 {
   position: relative;
-  padding-bottom: 65px;
+  padding-bottom: 0;
 }
 
 @media (max-width: 991px) {
@@ -5503,14 +5508,14 @@ img {
 .wpo-features-section-s2 .booking-form,
 .wpo-features-section-s3 .booking-form,
 .wpo-features-section-s4 .booking-form {
-  position: absolute;
-  top: -115px;
+  position: relative;
+  margin-top: -250px;
   z-index: 1;
   padding: 65px 60px;
   background: #fff;
   border-radius: 2px;
-  -webkit-box-shadow: 0 18px 38px #d9dde4;
-          box-shadow: 0 18px 38px #d9dde4;
+  -webkit-box-shadow: 0px 0px 51.3px 38.7px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 51.3px 38.7px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 991px) {
@@ -5518,7 +5523,7 @@ img {
   .wpo-features-section-s2 .booking-form,
   .wpo-features-section-s3 .booking-form,
   .wpo-features-section-s4 .booking-form {
-    position: unset;
+    margin-top: 0;
   }
 }
 
@@ -7089,10 +7094,12 @@ img {
 }
 
 .wpo-bussiness-area-section {
-  background: #000;
+  background: url(../images/cta-img-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
   z-index: 1;
-  overflow: hidden;
 }
 
 .wpo-bussiness-area-section .bussiness-text {
