@@ -18,6 +18,10 @@
             font-family: $base-font;
             margin-bottom: 16px;
             margin-top: 5px;
+
+            @media (max-width:575px) {
+                font-size: 38px;
+            }
         }
 
         p {
@@ -43,6 +47,9 @@
                 font-size: 18px;
                 font-weight: 600;
                 font-family: $heading-font;
+                @media (max-width:575px) {
+                    font-size: 17px;
+                }
             }
 
             .phone {
@@ -56,9 +63,12 @@
                     display: flex;
                 }
             }
-
             border-right: 1px solid #ebebeb;
             margin-bottom: 20px;
+
+            @media (max-width:991px) {
+                border: 0;
+            }
         }
 
         .col {
@@ -92,36 +102,46 @@
                 }
             }
         }
-
-        .fc-contact,
-        .form-Select,
-        .fc-contact-text {
-            width: 100%;
-            height: 65px;
-            border: 0;
-            border-bottom: 1px solid #b6bbc5;
-            transition: all .4s ease-in-out;
-            color: #7a7c7f;
-            font-size: 18px;
-            font-weight: 400;
-            padding: 0 24px;
+        .input-content{
             margin-bottom: 85px;
-
-            &:focus-visible {
-                outline: 0;
-                border-bottom: 1px solid $theme-primary-color
+            @media (max-width:991px) {
+                margin-bottom: 60px;
             }
-        }
+            @media (max-width:767px) {
+                margin-bottom: 30px;
+            }
 
-        .form-Select {
-            background: $white url(../images/select-icon2.png) no-repeat calc(100% - 50px) center;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-        }
 
-        .fc-contact-text {
-            height: 50px;
+            .fc-contact,
+            .form-Select,
+            .fc-contact-text {
+                width: 100%;
+                height: 65px;
+                border: 0;
+                border-bottom: 1px solid #b6bbc5;
+                transition: all .4s ease-in-out;
+                color: #7a7c7f;
+                font-size: 18px;
+                font-weight: 400;
+                padding: 0 24px;
+                
+    
+                &:focus-visible {
+                    outline: 0;
+                    border-bottom: 1px solid $theme-primary-color
+                }
+            }
+    
+            .form-Select {
+                background: $white url(../images/select-icon2.png) no-repeat calc(100% - 50px) center;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+    
+            .fc-contact-text {
+                height: 50px;
+            }
         }
 
         .theme-btn {
@@ -139,6 +159,14 @@
 // wpo-contact-map-section
 .wpo-contact-map-section {
     padding-bottom: 120px;
+
+    @media (max-width:991px) {
+        padding-bottom: 90px;
+    }
+
+    @media (max-width:767px) {
+        padding-bottom: 80px;
+    }
 
     .wpo-contact-map {
         height: 550px;

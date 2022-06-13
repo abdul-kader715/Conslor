@@ -86,6 +86,13 @@
                                             <a href="#">PAGES</a>
                                             <ul class="sub-menu">
                                                 <li><a href="about.html">About</a></li>
+                                                <li><a href="team.html">Team</a></li>
+                                                <li><a href="team-single.html">Team single</a></li>
+                                                <li><a href="shop.html">Shop Page</a></li>
+                                                <li><a href="shop-single.html">Shop Single</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
                                                 <li><a href="404.html">404 Error</a></li>
                                                 <li><a href="faq.html">FAQ</a></li>
                                             </ul>
@@ -266,7 +273,7 @@
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="features-single">
                                         <span>01.</span>
-                                        <h3><a href="feature-single.html">Global consumer insights</a></h3>
+                                        <h3><a href="shop.html">Global consumer insights</a></h3>
                                         <p>Showed a lady fitted out with
                                             hat and fur sat upright</p>
                                     </div>
@@ -274,7 +281,7 @@
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="features-single">
                                         <span>02.</span>
-                                        <h3><a href="feature-single.html">Marketing Strategies</a></h3>
+                                        <h3><a href="shop.html">Marketing Strategies</a></h3>
                                         <p>Showed a lady fitted out with
                                             hat and fur sat upright</p>
                                     </div>
@@ -282,7 +289,7 @@
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="features-single">
                                         <span>03.</span>
-                                        <h3><a href="feature-single.html">Why our consulting</a></h3>
+                                        <h3><a href="shop.html">Why our consulting</a></h3>
                                         <p>Showed a lady fitted out with
                                             hat and fur sat upright</p>
                                     </div>
@@ -290,7 +297,7 @@
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="features-single">
                                         <span>04.</span>
-                                        <h3><a href="feature-single.html">Corporate clients</a></h3>
+                                        <h3><a href="shop.html">Corporate clients</a></h3>
                                         <p>Showed a lady fitted out with
                                             hat and fur sat upright</p>
                                     </div>
@@ -306,23 +313,30 @@
                                     contact with you as soon as posible</p>
                             </div>
                             <div class="booking-form-content">
-                                <form action="/mail.php">
+                                <form method="post" class="contact-validation-active" id="contact-form-main">
                                     <div class="booking-label">
                                         <label>Your name <span>*</span></label>
-                                        <input type="text">
+                                        <input type="text" name="name" id="name">
                                     </div>
                                     <div class="booking-label">
                                         <label>Your email<span>*</span></label>
-                                        <input type="email">
+                                        <input type="email" name="email" id="email">
                                     </div>
                                     <div class="booking-label">
                                         <label>Message<span>*</span></label>
-                                        <textarea cols="30" rows="10"></textarea>
+                                        <textarea cols="30" rows="10" name="note"  id="note"></textarea>
                                     </div>
                                     <!-- <div class="booking-label">
                                         <input type="button" value="submit">
                                     </div> -->
-                                    <button class="booking-btn theme-btn">Submit it</button>
+                                    <button class="booking-btn theme-btn" >Submit it</button>
+                                    <div id="loader">
+                                        <i class="ti-reload"></i>
+                                    </div>
+                                    <div class="clearfix error-handling-messages">
+                                        <div id="success">Thank you</div>
+                                        <div id="error"> Error occurred while sending email. Please try again later. </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>

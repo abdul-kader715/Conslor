@@ -57,36 +57,38 @@
             }
 
             .fc-contact {
-
-                .fc-contact-name,
-                .form-controls,
-                .fc-contact-number {
-                    width: 100%;
-                    color: $text-color-s3;
-                    font-size: 15px;
-                    font-weight: 400;
-                    padding: 20px;
+                .fc-contact-text {
                     margin-bottom: 20px;
 
-                    &:focus-visible {
-                        outline: 0;
+                    .fc-contact-name,
+                    .form-controls,
+                    .fc-contact-number {
+                        width: 100%;
+                        color: $text-color-s3;
+                        font-size: 15px;
+                        font-weight: 400;
+                        padding: 20px;
+
+                        &:focus-visible {
+                            outline: 0;
+                        }
                     }
-                }
 
-                .form-controls {
-                    background: $white url(../images/select-icon2.png) no-repeat calc(100% - 15px) center;
-                    border-color: transparent;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    appearance: none;
-
-                    &:focus {
+                    .form-controls {
+                        background: $white url(../images/select-icon2.png) no-repeat calc(100% - 15px) center;
                         border-color: transparent;
-                        box-shadow: transparent;
-                    }
-                }
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
 
-                .fc-contact-number {}
+                        &:focus {
+                            border-color: transparent;
+                            box-shadow: transparent;
+                        }
+                    }
+
+                    .fc-contact-number {}
+                }
 
                 .theme-btn {
                     border-radius: 0;
@@ -100,7 +102,8 @@
 }
 
 // wpo-service-section-s3
-.wpo-service-section-s3 {
+.wpo-service-section-s3,
+.wpo-service-section-s4 {
     padding-bottom: 40px;
 
     @media (max-width:767px) {
@@ -151,6 +154,7 @@
 
 // wpo-case-studies-section
 .wpo-case-studies-section,
+.wpo-case-studies-section-s2,
 .case-studies-related {
 
     .title {
@@ -185,7 +189,7 @@
     .case-studies-wrap {
 
         .case-studies-content {
-            padding: 90px;
+            padding: 127px 90px;
             background: $section-bg-color;
 
             @media (max-width:1440px) {
@@ -278,9 +282,11 @@
                     transition: all .4s ease-in-out;
 
                     h3 {
-                        font-weight: 700;
-                        font-size: 18px;
-                        color: $white;
+                        a {
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: $text-color-s2;
+                        }
                     }
 
                     span {

@@ -85,10 +85,17 @@
                                                     <li><a href="service-single.html">service single</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item-has-children">
+                                             <li class="menu-item-has-children">
                                                 <a href="#">PAGES</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="about.html">About</a></li>
+                                                    <li><a href="team.html">Team</a></li>
+                                                    <li><a href="team-single.html">Team single</a></li>
+                                                    <li><a href="shop.html">Shop Page</a></li>
+                                                    <li><a href="shop-single.html">Shop Single</a></li>
+                                                    <li><a href="cart.html">Cart</a></li>
+                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="pricing.html">Pricing</a></li>
                                                     <li><a href="404.html">404 Error</a></li>
                                                     <li><a href="faq.html">FAQ</a></li>
                                                 </ul>
@@ -179,7 +186,7 @@
                                 <div class="col-lg-3 col-md-6 col-12">
                                     <div class="features-single">
                                         <span>01.</span>
-                                        <h3><a href="feature-single.html">Global consumer insights</a></h3>
+                                        <h3><a href="shop.html">Global consumer insights</a></h3>
                                         <p>Showed a lady fitted out with
                                             hat and fur sat upright</p>
                                     </div>
@@ -187,7 +194,7 @@
                                 <div class="col-lg-3 col-md-6 col-12">
                                     <div class="features-single">
                                         <span>02.</span>
-                                        <h3><a href="feature-single.html">Check Marketing Strategies</a></h3>
+                                        <h3><a href="shop.html">Check Marketing Strategies</a></h3>
                                         <p>Showed a lady fitted out with
                                             hat and fur sat upright</p>
                                     </div>
@@ -195,7 +202,7 @@
                                 <div class="col-lg-3 col-md-6 col-12">
                                     <div class="features-single">
                                         <span>03.</span>
-                                        <h3><a href="feature-single.html">Check Why our consulting</a></h3>
+                                        <h3><a href="shop.html">Check Why our consulting</a></h3>
                                         <p>Showed a lady fitted out with
                                             hat and fur sat upright</p>
                                     </div>
@@ -203,7 +210,7 @@
                                 <div class="col-lg-3 col-md-6 col-12">
                                     <div class="features-single">
                                         <span>04.</span>
-                                        <h3><a href="feature-single.html">Best corporate services</a></h3>
+                                        <h3><a href="shop.html">Best corporate services</a></h3>
                                         <p>Showed a lady fitted out with
                                             hat and fur sat upright</p>
                                     </div>
@@ -228,28 +235,40 @@
                             <div class="col-lg-7">
                                 <div class="free-consultation-content">
                                     <h3>Free consultation</h3>
-                                    <form class="fc-contact">
+                                    <form class="fc-contact contact-validation-active" method="post"  id="contact-form-main">
                                         <div class="row">
                                             <div class="col-lg-6">
-                                                <input type="text" class="fc-contact-name" placeholder="Name*">
+                                                <div class="fc-contact-text">
+                                                    <input type="text" class="fc-contact-name" name="name" id="name" placeholder="Name*">
+                                                </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <input type="number" class="fc-contact-number" placeholder="Number*">
+                                                <div class="fc-contact-text">
+                                                    <input type="number" class="fc-contact-number" name="phone" id="phone" placeholder="Number*">
+                                                </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <select name="service" class="form-controls">
-                                                    <option disabled="disabled" selected="">Select a subject*</option>
-                                                    <option>Tax Management</option>
-                                                    <option>Financial Advices</option>
-                                                    <option>Risk Management</option>
-                                                </select>
+                                                <div class="fc-contact-text">
+                                                    <select name="subject"  class="form-controls">
+                                                        <option disabled="disabled" selected="">Select a subject*</option>
+                                                        <option>Tax Management</option>
+                                                        <option>Financial Advices</option>
+                                                        <option>Risk Management</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <button type="submit" class="theme-btn">Send it now</button>
+                                                <div id="loader">
+                                                    <i class="ti-reload"></i>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="clearfix error-handling-messages">
+                                            <div id="success">Thank you</div>
+                                            <div id="error"> Error occurred while sending email. Please try again later. </div>
+                                        </div>
                                     </form>
-
                                 </div>
                             </div>
                         </div>
@@ -551,7 +570,6 @@
         <!-- end of wpo-why-choose-us-section -->
 
         <!-- start of wpo-testimonial-section-s2 -->
-        <!-- start of wpo-testimonial-section-s2 -->
         <section class="wpo-testimonial-section-s2 pt-35">
             <div class="container">
                 <div class="row justify-content-center">
@@ -597,7 +615,6 @@
                 </div>
             </div>
         </section>
-        <!-- end of wpo-testimonial-section-s2 -->
         <!-- end of wpo-testimonial-section-s2 -->
 
         <!-- start of wpo-blog-section -->
