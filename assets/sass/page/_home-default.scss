@@ -43,9 +43,9 @@
             }
 
             p {
-                color: $small-black;
+                color: $text-color-s2;
                 font-size: 16px;
-                font-weight: 400;
+                font-weight: 600;
                 margin-bottom: 0;
             }
 
@@ -103,9 +103,9 @@
                 margin-bottom: 35px;
 
                 label {
-                    color: $small-black;
+                    color: $text-color-s6;
                     font-size: 16px;
-                    font-weight: 400;
+                    font-weight: 600;
                     display: block;
 
                     span {
@@ -134,6 +134,11 @@
             }
         }
 
+        .theme-btn {
+            padding: 15px 40px;
+            border-radius: 3px;
+        }
+
     }
 }
 
@@ -157,8 +162,12 @@
 
             h3 {
                 margin: 0;
-                padding-bottom: 45px;
+                padding-bottom: 40px;
                 position: relative;
+                line-height: 25px;
+                font-size: 20px;
+                font-weight: 500;
+                padding-right: 50px;
 
                 @media (max-width:991px) {
                     padding-bottom: 30px;
@@ -167,7 +176,7 @@
                 &::before {
                     position: absolute;
                     left: 7%;
-                    top: 78%;
+                    top: 68%;
                     content: "";
                     width: 45px;
                     height: 2px;
@@ -190,10 +199,8 @@
 
                 a {
                     color: $text-color-s2;
-                    font-size: 20px;
-                    font-weight: 400;
-                    padding-right: 50px;
                     transition: all .4s ease-in-out;
+
 
                     @media (max-width:991px) {
                         padding-right: 0;
@@ -204,7 +211,7 @@
             p {
                 color: $text-color-s2;
                 font-size: 16px;
-                font-weight: 400;
+                font-weight: 600;
             }
 
             &:hover {
@@ -222,6 +229,11 @@
 .wpo-cta-section {
     position: relative;
     z-index: 1;
+    padding: 165px 0;
+
+    @media (max-width:767px) {
+        padding: 80px 0;
+    }
 
     .cta-bg {
         position: absolute;
@@ -265,6 +277,7 @@
                 h2 {
                     color: $white;
                     line-height: 70px;
+                    margin-top: -10px;
 
                     @media (max-width:1550px) {
                         font-size: 50px;
@@ -292,6 +305,12 @@
 
                 p {
                     color: $white;
+                    font-size: 22px;
+                    line-height: 1.5;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+
+
 
                     @media (max-width:1450px) {
                         font-size: 17px;
@@ -307,7 +326,9 @@
                 }
 
                 .theme-btn {
-                    background: $text-color-s3;
+                    background: #515151;
+                    border-radius: 3px;
+
 
                     &:hover {
                         background: $theme-primary-color;
@@ -433,10 +454,12 @@
                 }
 
                 .theme-btn {
-                    color: #78621b;
+                    font-weight: 700;
                     background: $white;
                     padding: 15px 30px;
                     border-radius: 0;
+                    color: rgb(120, 98, 27);
+
 
                 }
             }
@@ -453,6 +476,7 @@
 
     .wpo-section-title {
         text-align: left;
+        margin-bottom: 30px;
 
         @media (max-width:1199px) {
             margin-bottom: 0;
@@ -464,8 +488,11 @@
         }
 
         h2 {
+            line-height: 70px;
+
             @media (max-width:1399px) {
                 font-size: 50px;
+
             }
 
             @media (max-width:1199px) {
@@ -488,6 +515,12 @@
         }
 
         p {
+            font-weight: 600;
+            padding-right: 10px;
+            margin-bottom: 0;
+            line-height: 35px;
+
+
             @media (max-width:1199px) {
                 font-size: 20px;
             }
@@ -509,28 +542,34 @@
 
         ul {
             list-style: none;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
 
             li {
-                padding: 6px 0;
-                padding-left: 40px;
+                margin-bottom: 12px;
+                padding-left: 50px;
                 position: relative;
                 color: $text-color-s2;
                 font-size: 18px;
-                font-weight: 400;
+                font-weight: 600;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
 
                 &:before {
                     position: absolute;
                     left: 0;
                     top: 50%;
+                    font-weight: 400;
+                    font-style: 12px;
                     transform: translateY(-50%);
                     content: "\f120";
                     font-family: "Flaticon";
                     color: $theme-primary-color;
-                    border: 2px solid $theme-primary-color;
+                    border: 1px solid $theme-primary-color;
                     border-radius: 50px;
-                    width: 30px;
-                    height: 30px;
+                    width: 25px;
+                    height: 25px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -538,6 +577,8 @@
                 }
             }
         }
+
+        .theme-btn {}
     }
 
     .about-right-img {
@@ -557,7 +598,6 @@
     }
 
     .wpo-fun-fact-grids {
-
         overflow: hidden;
 
         @include media-query(991px) {}
@@ -580,7 +620,7 @@
         align-items: center;
         align-content: center;
         justify-content: start;
-        margin-top: 50px;
+        margin-top: 40px;
 
         @media (max-width:1199px) {
             margin-top: 18px;
@@ -593,7 +633,7 @@
             i {
 
                 &::before {
-                    color: $text-color-s3;
+                    color: $text-color-s2;
                     font-size: 70px;
                 }
             }
@@ -606,14 +646,19 @@
             h3 {
                 color: $text-color-s2;
                 font-size: 40px;
-                font-size: 600;
-                margin: 0;
+                font-size: 700;
+
+                i {
+                    font-size: 20px;
+                    font-size: 400;
+                }
             }
 
             p {
                 color: $text-color-s3;
-                font-size: 13px;
-                font-size: 600;
+                font-size: 12px;
+                font-weight: 700;
+                font-family: $base-font;
                 margin: 0;
                 text-transform: uppercase;
 
@@ -647,8 +692,7 @@
     }
 
     .text-musk {
-        margin-bottom: 70px;
-
+        margin-bottom: 60px;
 
         .text-musk-title {
             background: url(../images/text-moqup.jpg);
@@ -658,6 +702,7 @@
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
             padding: 0;
+            text-shadow: 0px 2px 17.85px rgba(35, 61, 98, 0.33);
         }
 
         h1 {
@@ -665,6 +710,7 @@
             font-size: 207px;
             font-weight: 400;
             color: $text-color-s2;
+
 
             @media (max-width:1399px) {
                 font-size: 195px;
@@ -713,12 +759,14 @@
                     z-index: 1;
 
                     h3 {
-                        margin-bottom: 7px;
+                        margin-bottom: 5px;
+                        font-weight: 600;
+                        font-family: $base-font;
 
                         a {
                             font-size: 20px;
                             color: $white;
-                            font-weight: 600;
+
                             transition: all .4s ease-in-out;
                         }
 
@@ -736,12 +784,12 @@
                     }
 
                     ul {
-                        padding-top: 20px;
+                        padding-top: 15px;
 
                         li {
                             list-style: none;
                             display: inline-block;
-                            padding-right: 20px;
+                            padding-right: 15px;
 
                             &:last-child {
                                 padding-right: 0;
@@ -806,7 +854,7 @@
 
             .slick-prev {
                 left: 46.3%;
-                top: 105%;
+                top: 108%;
 
                 @media (max-width:1399px) {
                     left: 45.3%;
@@ -823,7 +871,7 @@
 
             .slick-next {
                 right: 46.3%;
-                top: 105%;
+                top: 108%;
 
                 @media (max-width:1399px) {
                     right: 45.3%;
@@ -863,6 +911,7 @@
     @media (max-width:991px) {
         padding-bottom: 60px;
     }
+
     @media (max-width:767px) {
         padding-bottom: 50px;
     }
@@ -944,16 +993,16 @@
                         }
 
 
-
                         p {
                             color: $text-color;
                             font-size: 19px;
                             font-weight: 600;
-                            background: #f0f0f7;
+                            background-color: rgba(255, 255, 255, 0.666);
                             font-family: $heading-font;
                             padding: 8px 12px;
                             display: inline-block;
                             margin: 0;
+                            font-family: $base-font;
 
                             @media (max-width:991px) {
                                 font-size: 18px;
@@ -971,10 +1020,11 @@
                             color: $text-color;
                             font-size: 19px;
                             font-weight: 600;
-                            background: #f0f0f7;
+                            background-color: rgba(255, 255, 255, 0.666);
                             padding: 8px 12px;
                             display: inline-block;
                             margin-bottom: 0;
+                            font-family: $base-font;
 
                             @media (max-width:991px) {
                                 font-size: 18px;
@@ -1102,16 +1152,25 @@
             font-size: 30px;
             font-weight: 300;
             color: $text-color-s2;
-            margin-bottom: 20px;
+
         }
 
         h4 {
             font-size: 12px;
-            font-weight: 600;
-            color: $small-black;
+            font-weight: 700;
             letter-spacing: 6px;
             text-transform: uppercase;
             margin-bottom: 50px;
+            font-family: $base-font;
+            color: rgb(38, 43, 62);
+            margin-top: 20px;
+        }
+
+        .theme-btn {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+            font-weight: 700;
         }
     }
 }
