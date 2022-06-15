@@ -60,9 +60,9 @@
     }
 
     .case-single-info {
-        margin-left: 121px;
+        margin-left: 60px;
         @media (max-width:1399px) {
-            margin-left: 65px;
+            margin-left: 50px;
         }
         @media (max-width:1199px) {
             margin-left: 0;
@@ -82,13 +82,14 @@
                 color: $text-color-s2;
                 font-weight: 700;
                 font-size: 13px;
-                letter-spacing: 3px;
+                letter-spacing: 2px;
             }
 
             .text {
                 color: $text-color-s3;
                 font-weight: 600;
                 font-size: 13px;
+                text-decoration: none;
             }
         }
     }
@@ -159,12 +160,30 @@
         h2{
             color: $text-color-s2;
             font-size: 36px;
-            font-weight: 400;
+            font-weight: 600;
             font-family:$base-font;
             margin-bottom: 50px;
             @media (max-width:767px) {
                 font-size: 25px;
+            }
+        }
+        .case-studies-wrap{
+            h3{
+                color: $white;
+                font-size: 18px;
+                font-weight: 700;
+                font-family:$base-font;
                 margin-bottom: 0;
+                @media (max-width:767px) {
+                    font-size: 16px;
+                }
+            }
+            span{
+                color: $white;
+                font-size: 10px;
+                font-weight: 600;
+                font-family:$base-font; 
+                list-style: 2px;
             }
         }
     }

@@ -7,7 +7,7 @@
             text-transform: uppercase;
             color: $text-color-s3;
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: 5px;
         }
 
@@ -38,15 +38,16 @@
                 text-transform: uppercase;
                 color: $theme-primary-color;
                 font-size: 14px;
-                font-weight: 600;
+                font-weight: 700;
+                font-family: $base-font;
             }
 
             p,
             h5 {
                 color: $text-color-s2;
                 font-size: 18px;
-                font-weight: 600;
-                font-family: $heading-font;
+                font-weight: 700;
+                font-family: $base-font;
                 @media (max-width:575px) {
                     font-size: 17px;
                 }
@@ -58,8 +59,8 @@
                 a {
                     color: $text-color-s2;
                     font-size: 18px;
-                    font-weight: 600;
-                    font-family: $heading-font;
+                    font-weight: 700;
+                    font-family: $base-font;
                     display: flex;
                 }
             }

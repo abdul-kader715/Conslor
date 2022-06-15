@@ -122,7 +122,7 @@
 			margin-bottom: 1.5em;
 			color: $text-color-s3;
 			font-size: 16px;
-			font-weight: 400;
+			font-weight: 600;
 
 
 			@include media-query(991px) {
@@ -149,7 +149,7 @@
 		margin-bottom: 25px;
 		color: $text-color-s2;
 		font-size: 36px;
-		font-weight: 400;
+		font-weight: 600;
 		font-family: $base-font;
 	}
 
@@ -335,7 +335,9 @@
 			display: block;
 			overflow: hidden;
 			padding-left: 25px;
-
+			a{
+				font-weight: 700;
+			}
 			@include media-query(767px) {
 				padding: 0;
 				margin: 15px 0 0 0;
@@ -344,8 +346,8 @@
 
 		.author-content p {
 			margin-bottom: 20px;
+			font-weight: 600;
 		}
-
 		.author-name {
 			font-family: $base-font;
 			font-size: 24px;
@@ -581,7 +583,7 @@
 				font-size: 20px;
 				font-size: calc-rem-value(20);
 				color: $text-color-s2;
-				font-weight: bold;
+				font-weight: 700;
 				margin: 0 0 1em;
 			}
 

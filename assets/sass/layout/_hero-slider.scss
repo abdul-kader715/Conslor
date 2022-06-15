@@ -1307,13 +1307,15 @@
 			text-transform: uppercase;
 			font-size: 18px;
 			font-weight: 300;
-			letter-spacing: 10px;
+			letter-spacing: 15px;
 			font-style: normal;
 			text-decoration: underline;
 			font-family: $base-font;
+			padding-top: 0;
 
 			@media (max-width:991px) {
 				padding-top: 0;
+				letter-spacing: 10px;
 			}
 
 			@media (max-width:499px) {
@@ -1358,10 +1360,12 @@
 
 	.swiper-button-prev:before {
 		content: "\f11e";
+		font-size: 30px;
 	}
 
 	.swiper-button-next:before {
 		content: "\f11d";
+		font-size: 30px;
 	}
 
 	.shape-1,

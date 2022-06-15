@@ -7,17 +7,14 @@
 .wpo-free-consultation-section-s2 {
 
     .free-consultation-wrap {
-
-        .section-bg-img {
-            height: 100%;
-            left: 0;
-            top: 0;
-
-            img {
-                max-width: 1900px;
-                height: 100%;
-            }
-        }
+        background: url(../images/consultaion-bg-01.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+        overflow: hidden;
+      
     }
 }
 
@@ -102,6 +99,11 @@
             color: $white;
             position: relative;
             padding: 20px 0;
+            text-align: end;
+            @media (max-width:575px) {
+                text-align: center;
+            }
+
 
             &::before {
                 position: absolute;
@@ -120,12 +122,17 @@
                 font-weight: 400;
                 text-transform: uppercase;
                 display: block;
+                margin-bottom: 5px;
+                @media (max-width:575px) {
+                margin-bottom: 0;
+                }
             }
 
             small {
                 font-size: 16px;
                 font-weight: 600;
                 margin: 0;
+                margin-top: 10px;
             }
 
         }

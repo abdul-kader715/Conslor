@@ -19,7 +19,7 @@
 	.widget {
 
 		h3 {
-			font-size: 23px;
+			font-size: 16px;
 			font-size: calc-rem-value(23);
 			color: $text-color-s2;
 			position: relative;
@@ -33,6 +33,7 @@
 		p {
 			color: $text-color-s3;
 			font-size: 16px;
+			font-weight: 600;
 		}
 	}
 
@@ -279,6 +280,7 @@
 			font-size: calc-rem-value(13);
 			color: $text-color-s3;
 			text-transform: uppercase;
+			font-weight: 500;
 
 			i {
 				display: inline-block;
@@ -324,7 +326,7 @@
 
 		ul li {
 			float: left;
-			margin: 0 8px 8px 0;
+			margin: 0 5px 5px 0;
 		}
 
 		ul li a {
