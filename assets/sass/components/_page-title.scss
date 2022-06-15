@@ -1,4 +1,13 @@
 .wpo-breadcumb-area {
+	padding-top: 93px;
+
+	@media (max-width:991px) {
+		padding-top: 80px;
+	}
+
+	@media (max-width:767px) {
+		padding-top: 52px;
+	}
 
 	.page-title {
 		h2 {

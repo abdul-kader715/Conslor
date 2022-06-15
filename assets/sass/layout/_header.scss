@@ -112,7 +112,7 @@
 				font-weight: 700;
 
 				i {
-					&::before{
+					&::before {
 						padding-left: 10px;
 					}
 				}
@@ -146,6 +146,7 @@
 
 	li {
 		margin-right: 20px;
+
 		h5 {
 			font-size: 14px;
 			font-weight: 700;
@@ -536,6 +537,7 @@
 				&::before {
 					font-size: 40px;
 					color: $theme-primary-color;
+
 					@media (max-width:575px) {
 						font-size: 36px;
 					}
@@ -1585,7 +1587,8 @@
 
 		&.sticky-on {
 			background: #29395b;
-			#navbar > ul > li > a::before {
+
+			#navbar>ul>li>a::before {
 				top: 100%;
 			}
 		}
@@ -1631,9 +1634,11 @@
 		visibility: hidden;
 		transition: all .3s ease-in-out;
 		transform: translate(-50%, -50%);
+
 		@media (max-width:1870px) {
 			top: 125%;
 		}
+
 		@media (max-width:1699px) {
 			top: 109%;
 		}
@@ -1644,18 +1649,24 @@
 		color: $theme-primary-color;
 		background: transparent;
 	}
-	#navbar > ul > li:hover > .sub-menu {
+
+	#navbar>ul>li:hover>.sub-menu {
 		top: 118%;
+
 		@media (max-width:1870px) {
-			top: 112%;;
+			top: 112%;
+			;
 		}
+
 		@media (max-width:1699px) {
 			top: 100%;
 		}
 	}
-	#navbar > ul > li .sub-menu a {
+
+	#navbar>ul>li .sub-menu a {
 		font-weight: 400;
 	}
+
 	#navbar>ul>li .sub-menu a:hover {
 		color: $theme-primary-color;
 	}
@@ -1669,6 +1680,7 @@
 			color: $white;
 		}
 	}
+
 	.header-right .close-form {
 		@media (max-width:1265px) {
 			display: block;
@@ -1687,7 +1699,7 @@
 			right: -13px;
 		}
 	}
-	
+
 }
 
 
@@ -1847,12 +1859,36 @@
 		}
 	}
 
+	.header-right .close-form a .call-us h2 {
+		font-weight: 600;
+		font-family: $base-font;
+		align-items: center;
+		display: flex;
+		color: $text-color-s6;
+	}
+	.header-right .close-form a .call-us h2 i{
+		font-size: initial;
+		@media (max-width:1399px) {
+			font-size: small;
+		}
+	}
+	.header-right .close-form a .call-us h2 i::before {
+		font-size: 13px;
+		color: $text-color-s6;
+		@media (max-width:1399px) {
+			font-size: 10px;
+		}
+	}
+	
+
+
 	@media (max-width: 450px) {
 		.header-right {
 			right: -13px;
 		}
 	}
-	.header-search-form-wrapper{
+
+	.header-search-form-wrapper {
 		@media (max-width:424px) {
 			display: none;
 		}
