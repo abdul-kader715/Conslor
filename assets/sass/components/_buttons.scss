@@ -98,7 +98,7 @@
 	}
 
 	&.s1{
-		background: #ddd;
+		background: $theme-primary-color-s2;
 
 		&:hover{
 			background-color: darken(#ddd, 8%);

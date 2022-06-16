@@ -1,4 +1,9 @@
-// wpo-features-section-s3
+/*======================================
+5. Home-style-3
+ =======================================*/
+
+/* 6.1 wpo-features-section-s3 */
+
 .wpo-features-section-s3,
 .wpo-features-section-s4 {
     padding-top: 95px;
@@ -27,7 +32,8 @@
     }
 }
 
-// wpo-free-consultation-section
+/* 6.2 wpo-free-consultation-section */
+
 .wpo-free-consultation-section,
 .wpo-free-consultation-section-s2 {
     .free-consultation-wrap {
@@ -109,7 +115,8 @@
     }
 }
 
-// wpo-service-section-s3
+/* 6.3 wpo-service-section-s3 */
+
 .wpo-service-section-s3,
 .wpo-service-section-s4 {
     padding-bottom: 40px;
@@ -189,7 +196,8 @@
     }
 }
 
-// wpo-case-studies-section
+/* 6.4 wpo-case-studies-section */
+
 .wpo-case-studies-section,
 .wpo-case-studies-section-s2,
 .case-studies-related {
@@ -355,7 +363,8 @@
 
 }
 
-// wpo-why-choose-us-section
+/* 6.5 wpo-why-choose-us-section */
+
 .wpo-why-choose-us-section {
     padding-bottom: 86px;
 
@@ -432,6 +441,11 @@
                 border-radius: 0;
                 border: 1px solid $white;
                 text-transform: uppercase;
+
+                &:hover {
+                    background: $white;
+                    color: $text-color-s2;
+                }
             }
         }
 
@@ -440,7 +454,8 @@
     }
 }
 
-// wpo-testimonial-section-s2
+/* 6.6 wpo-testimonial-section-s2 */
+
 .wpo-testimonial-section-s2,
 .wpo-testimonial-section-s3 {
     padding-top: 0;
@@ -528,10 +543,12 @@
         }
     }
 }
-// wpo-blog-section-s2
-.wpo-blog-section-s2{
-    .wpo-section-title{
-        h2{
+
+/* 6.7 wpo-blog-section-s2 */
+
+.wpo-blog-section-s2 {
+    .wpo-section-title {
+        h2 {
             font-family: $base-font;
         }
     }

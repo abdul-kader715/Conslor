@@ -1,5 +1,5 @@
 /*===============================
-16. wpo-checkout-page-style
+19. wpo-checkout-page-style
 ================================*/
 
 .wpo-checkout-area {
@@ -37,6 +37,7 @@
   .create-account span {
     margin-bottom: 20px;
     display: block;
+    color: $text-color-s3;
   }
 
   .input-wrap {
@@ -61,7 +62,7 @@
     right: 0;
     top: 0;
     height: 50px;
-    background: #333;
+    background:$text-color-s2;
     color: #fff;
     width: 108px;
     border: none;
@@ -70,6 +71,7 @@
     cursor: pointer;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
+    transition: all .4s ease-in-out;
   }
 
   .create-account button:hover {
@@ -157,6 +159,7 @@
     padding-left: 10px;
     height: 40px;
     background: #fff;
+    color: $text-color-s3;
     border-radius: 2px;
     border: none;
     border: 1px solid #ebebeb;
@@ -180,6 +183,7 @@
 
   .billing-adress {
     padding: 30px;
+    color: $text-color-s3;
   }
 
   .note-area textarea {
@@ -201,6 +205,7 @@
 
     label.fontsize {
       margin-bottom: 20px;
+      color: $text-color-s3;
     }
   }
 
@@ -357,6 +362,7 @@
 
   .payment-area .contact-form {
     margin-top: 40px;
+    color: $text-color-s3;
   }
 
   .cout-order-area {

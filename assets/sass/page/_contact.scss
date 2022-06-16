@@ -1,4 +1,6 @@
-// wpo-contact-area
+/*===============================
+18. wpo-contact-area
+================================*/
 .wpo-contact-area {
     padding-bottom: 35px;
 
@@ -48,6 +50,7 @@
                 font-size: 18px;
                 font-weight: 700;
                 font-family: $base-font;
+
                 @media (max-width:575px) {
                     font-size: 17px;
                 }
@@ -64,6 +67,7 @@
                     display: flex;
                 }
             }
+
             border-right: 1px solid #ebebeb;
             margin-bottom: 20px;
 
@@ -103,11 +107,14 @@
                 }
             }
         }
-        .input-content{
+
+        .input-content {
             margin-bottom: 85px;
+
             @media (max-width:991px) {
                 margin-bottom: 60px;
             }
+
             @media (max-width:767px) {
                 margin-bottom: 30px;
             }
@@ -125,21 +132,21 @@
                 font-size: 18px;
                 font-weight: 400;
                 padding: 0 24px;
-                
-    
+
+
                 &:focus-visible {
                     outline: 0;
                     border-bottom: 1px solid $theme-primary-color
                 }
             }
-    
+
             .form-Select {
                 background: $white url(../images/select-icon2.png) no-repeat calc(100% - 50px) center;
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 appearance: none;
             }
-    
+
             .fc-contact-text {
                 height: 50px;
             }
@@ -159,6 +166,10 @@
 
 // wpo-contact-map-section
 .wpo-contact-map-section {
+    h1 {
+        display: none;
+    }
+
     padding-bottom: 120px;
 
     @media (max-width:991px) {
