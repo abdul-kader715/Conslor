@@ -527,9 +527,9 @@
         ]
     });
 
-    // team-slider-s2
-    if ($(".team-slider-s2").length) {
-        $(".team-slider-s2").owlCarousel({
+    // cases-slider
+    if ($(".cases-slider").length) {
+        $(".cases-slider").owlCarousel({
             autoplay:false,
             smartSpeed: 300,
             margin: 30,
