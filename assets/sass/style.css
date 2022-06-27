@@ -10551,6 +10551,7 @@ img {
 .wpo-shop-section .details del + span {
   display: inline-block;
   padding-left: 20px;
+  color: #262b3e;
 }
 
 .wpo-shop-section .add-to-cart {
@@ -11053,6 +11054,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #687693;
 }
 
 @media (max-width: 767px) {
