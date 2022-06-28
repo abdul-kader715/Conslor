@@ -64,20 +64,17 @@
 
         h2 {
             font-size: 35px;
-            font-size: calc-rem-value(35);
             line-height: 1.4em;
             margin: 0 0 0.33em;
             font-weight: 700;
 
             @include media-query(767px) {
                 font-size: 22px;
-                font-size: calc-rem-value(22);
             }
         }
 
         .price {
             font-size: 25px;
-            font-size: calc-rem-value(25);
             color: $theme-primary-color;
             margin: 7px 0 20px;
             font-weight: 700;
@@ -85,17 +82,14 @@
 
             @include media-query(991px) {
                 font-size: 30px;
-                font-size: calc-rem-value(30);
             }
 
             @include media-query(767px) {
                 font-size: 25px;
-                font-size: calc-rem-value(25);
             }
 
             .old {
                 font-size: 24px;
-                font-size: calc-rem-value(24);
                 font-weight: normal;
                 color: lighten($text-color, 20%);
                 text-decoration: line-through;
@@ -105,12 +99,10 @@
 
                 @include media-query(991px) {
                     font-size: 20px;
-                    font-size: calc-rem-value(20);
                 }
 
                 @include media-query(767px) {
                     font-size: 18px;
-                    font-size: calc-rem-value(18);
                 }
             }
         }
@@ -220,7 +212,6 @@
             background-color: transparent;
             color: #333;
             font-size: 14px;
-            font-size: calc-rem-value(14);
             padding: 0 20px;
             height: 35px;
             line-height: 32px;
@@ -236,7 +227,6 @@
 
             @include media-query(767px) {
                 font-size: 14px;
-                font-size: calc-rem-value(14);
             }
 
             &:before {
@@ -246,13 +236,11 @@
 
         .product-option .heart-btn i {
             font-size: 15px;
-            font-size: calc-rem-value(15);
         }
 
         .product-option .product-row>div:last-child .theme-btn {
             background-color: $white;
             font-size: 18px;
-            font-size: calc-rem-value(18);
             color: $text-color;
             border: 1px solid lighten($black, 90%);
         }
@@ -292,7 +280,6 @@
 
         h4 {
             font-size: 18px;
-            font-size: calc-rem-value(18);
             margin: 0;
             line-height: 1.7em;
             font-weight: 700;
@@ -330,7 +317,6 @@
 
         .nav-tabs a {
             font-size: 15px;
-            font-size: calc-rem-value(15);
             color: $text-color;
             border: 0;
             border-radius: 0;
@@ -342,7 +328,6 @@
 
             @include media-query(767px) {
                 font-size: 14px;
-                font-size: calc-rem-value(14);
                 font-weight: normal;
                 padding: 10px 10px 8px;
                 text-transform: none;
@@ -425,7 +410,6 @@
                 .product-rt {
                     display: flex;
                     align-items: center;
-                    color: $text-color-s3;
                 }
 
                 .rating {}
@@ -442,11 +426,9 @@
             .name-rating>div {
                 display: inline-block;
                 font-size: 14px;
-                font-size: calc-rem-value(14);
 
                 @include media-query(767px) {
                     font-size: 12px;
-                    font-size: calc-rem-value(12);
                     display: block;
                 }
             }
@@ -613,7 +595,6 @@
 
                     @include widther(767px) {
                         font-size: 15px;
-                        font-size: calc-rem-value(15);
                         padding: 0 20px;
                     }
                 }

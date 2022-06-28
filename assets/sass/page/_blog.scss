@@ -104,7 +104,6 @@
 	.post {
 		h3 {
 			font-size: 36px;
-			font-size: calc-rem-value(34);
 			line-height: 1.2em;
 			font-weight: 600;
 			margin-top: 55px;
@@ -112,12 +111,10 @@
 
 			@include media-query(991px) {
 				font-size: 25px;
-				font-size: calc-rem-value(25);
 			}
 
 			@include media-query(767px) {
 				font-size: 22px;
-				font-size: calc-rem-value(22);
 			}
 		}
 
@@ -139,7 +136,6 @@
 
 			@include media-query(991px) {
 				font-size: 16px;
-				font-size: calc-rem-value(16);
 			}
 		}
 
@@ -321,7 +317,6 @@
 			font-family: "Flaticon";
 			content: "\f120";
 			font-size: 250px;
-			font-size: calc-rem-value(250);
 			color: #ecf3fb;
 			margin-left: 0;
 			position: absolute;
@@ -387,7 +382,6 @@
 
 		.fi:before {
 			font-size: 20px;
-			font-size: calc-rem-value(20);
 			color: $theme-primary-color;
 			position: absolute;
 			top: 50%;

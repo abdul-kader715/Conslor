@@ -320,12 +320,10 @@
 
 				@include media-query(1200px) {
 					font-size: 18px;
-					font-size: calc-rem-value(16);
 				}
 
 				@include media-query(991px) {
 					font-size: 16px;
-					font-size: calc-rem-value(16);
 					padding-left: 0;
 				}
 
@@ -346,7 +344,6 @@
 	.slide-caption h2 {
 		font-size: 178px;
 		font-weight: 400;
-		font-size: calc-rem-value(70);
 		color: $white;
 		font-family: $heading-font;
 
@@ -355,29 +352,24 @@
 
 		@include media-query(1400px) {
 			font-size: 150px;
-			font-size: calc-rem-value(50);
 		}
 
 		@include media-query(1200px) {
 			font-size: 100px;
-			font-size: calc-rem-value(50);
 		}
 
 		@include media-query(991px) {
 			font-size: 80px;
-			font-size: calc-rem-value(45);
 			margin-bottom: 19px;
 
 		}
 
 		@include media-query(767px) {
 			font-size: 70px;
-			font-size: calc-rem-value(35);
 		}
 
 		@include media-query(575px) {
 			font-size: 50px;
-			font-size: calc-rem-value(32);
 		}
 	}
 
@@ -750,7 +742,6 @@
 
 				.fi:before {
 					font-size: 25px;
-					font-size: calc-rem-value(50);
 					color: $white;
 				}
 			}
@@ -811,40 +802,33 @@
 
 			@include media-query(1199px) {
 				font-size: 50px;
-				font-size: calc-rem-value(50);
 			}
 
 			@include media-query(991px) {
 				font-size: 40px;
-				font-size: calc-rem-value(40);
 				line-height: 55px;
 			}
 
 			@include media-query(767px) {
 				font-size: 30px;
-				font-size: calc-rem-value(30);
 				line-height: 36px;
 			}
 
 			span {
 				@include media-query(1200px) {
 					font-size: 50px;
-					font-size: calc-rem-value(50);
 				}
 
 				@include media-query(991px) {
 					font-size: 45px;
-					font-size: calc-rem-value(45);
 				}
 
 				@include media-query(767px) {
 					font-size: 35px;
-					font-size: calc-rem-value(35);
 				}
 
 				@include media-query(575px) {
 					font-size: 30px;
-					font-size: calc-rem-value(32);
 				}
 			}
 		}
@@ -874,12 +858,10 @@
 			}
 			@include media-query(991px) {
 				font-size: 18px;
-				font-size: calc-rem-value(18);
 			}
 
 			@include media-query(767px) {
 				font-size: 16px;
-				font-size: calc-rem-value(16);
 				line-height: 22px;
 				margin-bottom: 30px;
 				padding-top: 0;

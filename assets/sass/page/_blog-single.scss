@@ -93,7 +93,6 @@
 	.post {
 		h3 {
 			font-size: 36px;
-			font-size: calc-rem-value(34);
 			line-height: 1.2em;
 			font-weight: 600;
 			margin-top: 55px;
@@ -101,12 +100,10 @@
 
 			@include media-query(991px) {
 				font-size: 25px;
-				font-size: calc-rem-value(25);
 			}
 
 			@include media-query(767px) {
 				font-size: 22px;
-				font-size: calc-rem-value(22);
 			}
 		}
 
@@ -127,7 +124,6 @@
 
 			@include media-query(991px) {
 				font-size: 16px;
-				font-size: calc-rem-value(16);
 			}
 		}
 
@@ -274,7 +270,6 @@
 
 			a {
 				font-size: 12px;
-				font-size: calc-rem-value(12);
 				display: inline-block;
 				padding: 5px 18px;
 				color: $dark-gray;
@@ -283,7 +278,6 @@
 
 				@include media-query(767px) {
 					font-size: 13px;
-					font-size: calc-rem-value(13);
 				}
 
 				&:hover {
@@ -305,7 +299,6 @@
 				padding: 0;
 				font-size: 16px;
 				font-weight: 700;
-				font-size: calc-rem-value(16);
 				text-transform: capitalize;
 				background: none;
 				text-decoration: underline;
@@ -351,7 +344,6 @@
 		.author-name {
 			font-family: $base-font;
 			font-size: 24px;
-			font-size: calc-rem-value(24);
 			font-weight: 600;
 			display: inline-block;
 			margin-bottom: 10px;
@@ -371,7 +363,6 @@
 		.social-link a {
 			display: block;
 			font-size: 13px;
-			font-size: calc-rem-value(13);
 			color: $text-color-s2;
 		}
 
@@ -477,7 +468,6 @@
 
 		.post-control-link {
 			font-size: 14px;
-			font-size: calc-rem-value(14);
 			color: $text-color;
 			text-transform: uppercase;
 			font-weight: 600;
@@ -486,14 +476,12 @@
 
 		.post-name {
 			font-size: 16px;
-			font-size: calc-rem-value(16);
 			color: $text-color-s2;
 			font-weight: 700;
 			margin: 0.7em 0 0;
 
 			@include media-query(991px) {
 				font-size: 16px;
-				font-size: calc-rem-value(16);
 			}
 		}
 
@@ -532,7 +520,6 @@
 
 		.comments-title {
 			font-size: 22px;
-			font-size: calc-rem-value(22);
 			font-weight: 700;
 			color: $text-color-s2;
 			font-family: $base-font;
@@ -542,7 +529,6 @@
 
 			@include media-query(991px) {
 				font-size: 20px;
-				font-size: calc-rem-value(20);
 			}
 		}
 
@@ -581,7 +567,6 @@
 			h4 {
 				font-family: $base-font;
 				font-size: 20px;
-				font-size: calc-rem-value(20);
 				color: $text-color-s2;
 				font-weight: 700;
 				margin: 0 0 1em;
@@ -589,7 +574,6 @@
 
 			h4 span {
 				font-size: 15px;
-				font-size: calc-rem-value(15);
 				color: $text-color-s3;
 				font-weight: normal;
 				text-transform: none;
@@ -606,7 +590,6 @@
 		.comment-reply-link {
 			font-family: $base-font;
 			font-size: 13px;
-			font-size: calc-rem-value(13);
 			font-weight: 700;
 			color: $text-color-s2;
 			text-align: center;
@@ -630,7 +613,6 @@
 		.comment-reply-title {
 			font-size: 22px;
 			font-family: $base-font;
-			font-size: calc-rem-value(22);
 			margin: 0 0 1.5em;
 			text-transform: uppercase;
 			letter-spacing: 2px;
@@ -638,7 +620,6 @@
 
 			@include media-query(991px) {
 				font-size: 20px;
-				font-size: calc-rem-value(20);
 			}
 		}
 
